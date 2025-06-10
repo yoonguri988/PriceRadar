@@ -36,6 +36,7 @@ export const Button = ({
   return (
     <button
       css={[baseStyle, sizeStyle[size], variantStyle[variant]]}
+      disabled={isDisabled}
       {...props}
     >
       {isLoading && <span css={spinnerStyle} aria-hidden />}
