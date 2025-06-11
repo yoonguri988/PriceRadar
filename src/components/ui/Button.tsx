@@ -7,7 +7,7 @@ import {
   iconLeftStyle,
   iconRightStyle,
   spinnerStyle,
-} from "./Button.styles";
+} from "@/styles/components/ui/Button.styles";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;

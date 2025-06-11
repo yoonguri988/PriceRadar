@@ -9,7 +9,7 @@ import {
   iconWrapper,
   helperTextStyle,
   errorMessageStyle,
-} from "./Input.styles";
+} from "@/styles/components/ui/Input.styles";
 
 export interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "size"> {
