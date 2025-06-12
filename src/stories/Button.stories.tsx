@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Search } from "lucide-react";
 
 const meta = {
-  title: "Components/ui/Button",
+  title: "UI/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {

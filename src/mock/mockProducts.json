@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "아이폰 15 Pro",
+    "price": 1450000,
+    "originalPrice": 1590000,
+    "imageUrl": "https://via.placeholder.com/300",
+    "seller": "Apple 공식스토어",
+    "reviewCount": 124,
+    "shippingInfo": "무료배송",
+    "isSoldOut": false,
+    "badges": [
+      { "text": "최저가", "color": "#2d9cdb" },
+      { "text": "특가", "color": "#e91e63" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "갤럭시 Z 플립 6",
+    "price": 1350000,
+    "imageUrl": "https://via.placeholder.com/300",
+    "seller": "Samsung 스토어",
+    "reviewCount": 58,
+    "shippingInfo": "배송비 3,000원",
+    "isSoldOut": true,
+    "badges": [{ "text": "품절 인기상품", "color": "#f44336" }]
+  },
+  {
+    "id": 3,
+    "name": "아이폰 15",
+    "price": 1850000,
+    "imageUrl": "https://via.placeholder.com/300",
+    "seller": "Samsung 스토어",
+    "reviewCount": 78,
+    "shippingInfo": "배송비 3,000원",
+    "isSoldOut": false,
+    "badges": []
+  }
+]

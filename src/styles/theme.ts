@@ -1,4 +1,5 @@
 /** 디자인 시스템 정의 */
+import "@emotion/react";
 
 export const theme = {
   colors: {

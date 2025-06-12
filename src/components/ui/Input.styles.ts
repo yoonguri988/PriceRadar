@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-export const baseInput = css`
+export const base = css`
   border-radius: 6px;
   border: 1px solid #ccc;
   outline: none;
@@ -23,7 +23,7 @@ export const baseInput = css`
 `;
 
 // 크기별 스타일
-export const sizeStyle = {
+export const sizes = {
   sm: css`
     padding: 6px 10px;
     font-size: 12px;
@@ -38,7 +38,7 @@ export const sizeStyle = {
   `,
 };
 
-export const labelStyle = css`
+export const label = css`
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -61,18 +61,18 @@ export const iconWrapper = css`
   }
 `;
 
-export const helperTextStyle = css`
+export const helperText = css`
   margin-top: 4px;
   font-size: 12px;
   color: #757575;
 `;
 
 // 에러 스타일
-export const errorStyle = css`
+export const error = css`
   border-color: #ff0000;
 `;
 
-export const errorMessageStyle = css`
+export const errorMsg = css`
   margin-top: 4px;
   font-size: 12px;
   color: #ff0000;

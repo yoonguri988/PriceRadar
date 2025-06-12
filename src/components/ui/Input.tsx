@@ -1,25 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { InputHTMLAttributes, ReactNode } from "react";
-import { SerializedStyles } from "@emotion/react";
-import {
-  baseInput,
-  errorStyle,
-  sizeStyle,
-  labelStyle,
-  iconWrapper,
-  helperTextStyle,
-  errorMessageStyle,
-} from "@/styles/components/ui/Input.styles";
-
-export interface InputProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, "size"> {
-  size?: "sm" | "md" | "lg";
-  error?: string;
-  label?: string;
-  icon?: ReactNode;
-  helperText?: string;
-  css?: SerializedStyles | SerializedStyles[];
-}
+import * as styles from "@/components/ui/Input.styles";
+import { InputProps } from "@/types/ui.types";
 
 /** Primary UI component for user interaction */
 export const Input = ({
@@ -38,26 +19,26 @@ export const Input = ({
   return (
     <div>
       {label && (
-        <label htmlFor={inputId} css={labelStyle}>
+        <label htmlFor={inputId} css={styles.label}>
           {label}
         </label>
       )}
-      <div css={icon ? iconWrapper : undefined}>
+      <div css={icon ? styles.iconWrapper : undefined}>
         {icon && <span className="icon">{icon}</span>}
       </div>
       <input
         id={inputId}
-        css={[baseInput, sizeStyle[size], error && errorStyle]}
+        css={[styles.base, styles.sizes[size], error && styles.error]}
         aria-invalid={!!error}
         aria-describedby={helperText || error ? descriptionId : undefined}
         {...props}
       />
       {error ? (
-        <p css={errorMessageStyle} id={descriptionId}>
+        <p css={styles.errorMsg} id={descriptionId}>
           {error}
         </p>
       ) : helperText ? (
-        <p css={helperTextStyle} id={descriptionId}>
+        <p css={styles.helperText} id={descriptionId}>
           {helperText}
         </p>
       ) : null}

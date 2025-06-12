@@ -3,7 +3,7 @@
 import { css, keyframes } from "@emotion/react";
 
 // 공통 스타일
-export const baseStyle = css`
+export const base = css`
   padding: 8px 16px;
   font-size: 16px;
   font-weight: 600;
@@ -12,7 +12,7 @@ export const baseStyle = css`
 `;
 
 // 크기별 스타일
-export const sizeStyle = {
+export const sizes = {
   sm: css`
     font-size: 12px;
     padding: 4px 10px;
@@ -28,7 +28,7 @@ export const sizeStyle = {
 };
 
 // 버튼 스타일
-export const variantStyle = {
+export const variant = {
   primary: css`
     background-color: #7346f3;
     color: #ffffff;
@@ -60,13 +60,13 @@ export const variantStyle = {
 };
 
 // 아이콘 스타일
-export const iconLeftStyle = css`
+export const iconLeft = css`
   margin-right: 8px;
   display: inline-flex;
   align-items: center;
 `;
 
-export const iconRightStyle = css`
+export const iconRight = css`
   margin-left: 8px;
   display: inline-flex;
   align-items: center;
@@ -78,7 +78,7 @@ const spin = keyframes`
   }
 `;
 
-export const spinnerStyle = css`
+export const spinner = css`
   width: 16px;
   height: 16px;
   border: 2px solid #ffffff;
