@@ -3,6 +3,7 @@
  */
 export * from "./api/productAPI";
 export * from "./components/ProductCard";
+export * from "./components/ProductCardSkeleton";
 export * from "./components/ProductList";
 export * from "./hooks/useProductList";
 export * as CardStyles from "./styles/ProductCard.styles";

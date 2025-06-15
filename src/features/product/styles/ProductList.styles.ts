@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 
 // Grid에 맞춰 카드 정렬 UI 구현
 export const gridContainer = css`
@@ -45,4 +46,11 @@ export const filterBar = css`
     padding: 6px 10px;
     font-size: 14px;
   }
+`;
+
+export const loader = css`
+  padding: 2rem 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
 `;

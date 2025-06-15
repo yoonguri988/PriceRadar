@@ -1,14 +1,23 @@
-import { QueryFunctionContext } from "@tanstack/react-query";
-import { Product, SearchParams } from "@/features/product";
+import {
+  SearchParams,
+  Product,
+  GetProductListResponse,
+} from "@/features/product";
+import { PAGE_STANDARD } from "@/lib/constants";
 
-export const getList = async ({
-  queryKey,
-}: QueryFunctionContext<[string, SearchParams]>): Promise<Product[]> => {
-  const [_key, { order, category }] = queryKey;
+export const getProductList = async ({
+  order = "latest",
+  category,
+  page = 1,
+}: SearchParams): Promise<GetProductListResponse> => {
+  const params = new URLSearchParams();
+  if (order) params.append("order", order);
+  if (category) params.append("category", category);
+  if (page) params.append("page", String(page));
 
-  const searchParams = `order=${order}&category=${category}`;
-
-  const res = await fetch(`/api/products?${searchParams}`);
+  const res = await fetch(`/api/products?${params.toString()}`);
   if (!res.ok) throw new Error("상품 목록을 불러오지 못했습니다.");
-  return res.json();
+
+  const data: GetProductListResponse = await res.json();
+  return data;
 };

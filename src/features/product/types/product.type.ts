@@ -14,11 +14,12 @@
 export type SearchParams = {
   order?: string;
   category?: string;
+  page?: number;
 };
 
 //서버 응답
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   price: number;
   originalPrice?: number;
@@ -31,11 +32,16 @@ export interface Product {
   isFavorite?: boolean;
 }
 
+export interface GetProductListResponse {
+  items: Product[];
+  hasMore: boolean;
+}
+
 // UI 컴포넌트
 export interface ProductCardProps {
-  imageUrl: string;
   name: string;
   price: number;
+  imageUrl: string;
   seller?: string;
   reviewCount?: number;
   shippingInfo?: string;

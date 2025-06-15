@@ -3,9 +3,9 @@ import { CardStyles, ProductCardProps } from "@/features/product";
 import { Star } from "lucide-react";
 
 export const ProductCard = ({
-  imageUrl,
   name,
   price,
+  imageUrl,
   seller: sellerName,
   reviewCount,
   shippingInfo,

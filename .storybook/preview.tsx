@@ -1,6 +1,10 @@
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../src/styles/theme";
 import type { Preview } from "@storybook/nextjs-vite";
+import { initialize, mswLoader } from "msw-storybook-addon";
+
+initialize(); // 초기화
+export const loaders = [mswLoader];
 
 const preview: Preview = {
   decorators: [
@@ -16,6 +20,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    viewport: {
+      defaultViewport: "responsive",
     },
 
     a11y: {

@@ -1,27 +1,45 @@
 /** @jsxImportSource @emotion/react */
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { ListStyles, useProductList, ProductCard } from "@/features/product";
-
-// 예: 정렬 기준 enum 또는 상수
-export const SORT_OPTIONS = [
-  { label: "최신순", value: "latest" },
-  { label: "낮은 가격순", value: "priceAsc" },
-  { label: "높은 가격순", value: "priceDesc" },
-];
+import {
+  ListStyles as styles,
+  useProductList,
+  ProductCard,
+  ProductCardSkeleton,
+} from "@/features/product";
+import { SORT_OPTIONS } from "@/lib/constants";
 
 export function ProductList() {
   // 정렬 및 필터 조건
   const [order, setOrder] = useState("latest");
   const [category, setCategory] = useState("");
 
-  const { data, isLoading, error } = useProductList({ order, category });
+  const {
+    data,
+    isLoading,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useProductList({ order, category });
 
-  if (isLoading) return <p>로딩 중...</p>;
+  const observerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!observerRef.current || !hasNextPage) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) fetchNextPage();
+    });
+
+    observer.observe(observerRef.current);
+    return () => observer.disconnect();
+  }, [fetchNextPage, hasNextPage]);
+
+  const products = data?.pages.flatMap((page) => page?.items ?? []) ?? [];
+
   if (error) return <p>에러가 발생했습니다 😥</p>;
-
-  if (data && data.length === 0) {
+  if (products.length === 0) {
     // 상품 목록이 비어있는 경우
     return (
       <EmptyState
@@ -43,8 +61,8 @@ export function ProductList() {
           </option>
         ))}
       </select>
-      <div css={ListStyles.gridContainer}>
-        {data?.map((item) => (
+      <div css={styles.gridContainer}>
+        {products.map((item) => (
           <ProductCard
             key={item.id}
             name={item.name}
@@ -61,6 +79,18 @@ export function ProductList() {
           />
         ))}
       </div>
+      {isLoading && (
+        <div css={styles.gridContainer}>
+          {Array.from({ length: 8 }).map((_, i) => (
+            <ProductCardSkeleton key={i} />
+          ))}
+        </div>
+      )}
+      {hasNextPage && (
+        <div ref={observerRef} css={styles.loader}>
+          {isFetchingNextPage ? "불러오는 중..." : "스크롤하여 더 보기"}
+        </div>
+      )}
     </div>
   );
 }

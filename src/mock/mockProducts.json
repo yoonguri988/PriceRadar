@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "product_1",
     "name": "아이폰 15 Pro",
     "price": 1450000,
     "originalPrice": 1590000,
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "product_2",
     "name": "갤럭시 Z 플립 6",
     "price": 1350000,
     "imageUrl": "https://via.placeholder.com/300",
@@ -26,7 +26,7 @@
     "badges": [{ "text": "품절 인기상품", "color": "#f44336" }]
   },
   {
-    "id": 3,
+    "id": "product_3",
     "name": "아이폰 15",
     "price": 1850000,
     "imageUrl": "https://via.placeholder.com/300",

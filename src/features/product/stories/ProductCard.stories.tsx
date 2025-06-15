@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ProductCard } from "@/features/product";
+import { ProductCard, ProductCardSkeleton } from "@/features/product";
 
 const queryClient = new QueryClient();
 
@@ -22,12 +22,28 @@ type Story = StoryObj<typeof ProductCard>;
 
 export const Default: Story = {
   args: {
-    imageUrl: "https://via.placeholder.com/300",
     name: "아이폰 15 Pro",
     price: 1390000,
+    imageUrl: "https://via.placeholder.com/300",
     seller: "Apple 공식스토어",
     reviewCount: 124,
     shippingInfo: "무료배송",
+    isSoldOut: false,
+    isFavorite: false,
+    onFavoriteToggle: () => alert("찜 토글"),
+  },
+  parameters: {
+    viewport: {
+      iphone14: {
+        name: "iPhone 14 Pro",
+        styles: {
+          width: "390px",
+          height: "844px",
+        },
+        type: "mobile",
+      },
+    },
+    layout: "fullscreen",
   },
 };
 
@@ -80,5 +96,56 @@ export const SoldOut: Story = {
     seller: "PlayStation 공식",
     reviewCount: 320,
     shippingInfo: "배송비 2,500원",
+  },
+};
+
+export const Favorite: Story = {
+  args: {
+    ...Default.args,
+    isFavorite: true,
+  },
+};
+
+export const DesignQA: Story = {
+  args: {
+    name: "맥북 프로 16인치",
+    price: 3490000,
+    imageUrl: "https://via.placeholder.com/300x300?text=MacBook",
+    seller: "애플 공식",
+    reviewCount: 234,
+    shippingInfo: "오늘 출발",
+    isSoldOut: false,
+    isFavorite: false,
+    badges: [{ text: "베스트셀러", color: "#2d9cdb" }],
+    onFavoriteToggle: () => alert("찜 토글"),
+  },
+  decorators: [
+    // UI 품질 검수
+    (Story) => (
+      <div
+        style={{
+          width: "300px", // 고정 너비로 실제 그리드 아이템처럼 표시
+          padding: "2rem", // 패딩 적용
+          background: "#f9f9f9", // 회색 배경
+          border: "1px solid #ddd",
+        }}
+      >
+        <Story />
+      </div>
+    ),
+  ],
+  parameters: {
+    layout: "centered",
+  },
+};
+
+export const Skeleton: Story = {
+  render: () => (
+    <div style={{ width: "300px" }}>
+      <ProductCardSkeleton />
+    </div>
+  ),
+  parameters: {
+    layout: "centered",
   },
 };
