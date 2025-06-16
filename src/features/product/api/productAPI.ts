@@ -21,3 +21,22 @@ export const getProductList = async ({
   const data: GetProductListResponse = await res.json();
   return data;
 };
+
+export const getProductDetail = async (id: string): Promise<Product> => {
+  return {
+    id,
+    name: "Apple AirPods Pro 2세대",
+    price: 249000,
+    originalPrice: 329000,
+    imageUrl: "/images/airpods-pro.jpg",
+    seller: "Apple 공식스토어",
+    reviewCount: 1523,
+    shippingInfo: "무료배송 / 오늘 도착",
+    isSoldOut: false,
+    isFavorite: true,
+    badges: [
+      { text: "특가", color: "#FF4D4F" },
+      { text: "빠른배송", color: "#52C41A" },
+    ],
+  };
+};

@@ -54,3 +54,10 @@ export const loader = css`
   color: #888;
   font-size: 0.95rem;
 `;
+
+// 정렬 및 필터
+export const SortContainer = css`
+  display: "flex";
+  gap: "1rem";
+  marginbottom: "1rem";
+`;

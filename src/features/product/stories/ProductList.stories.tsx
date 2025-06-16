@@ -1,7 +1,7 @@
 // src/features/product/stories/ProductList.stories.tsx
 
 import type { Meta, StoryObj } from "@storybook/react";
-import { ProductList } from "@/features/product";
+import { ProductCardSkeleton, ProductList } from "@/features/product";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { http, HttpResponse } from "msw"; // ✅ v2 import
 // 백엔드 구현을 기다리지 않고 UI 개발 및 테스트 가능
@@ -56,3 +56,14 @@ export default meta;
 type Story = StoryObj<typeof ProductList>;
 
 export const Default: Story = {};
+
+export const Loading: Story = () => (
+  <>
+    {Array.from({ length: 4 }).map((_, i) => (
+      <ProductCardSkeleton key={i} />
+    ))}
+  </>
+);
+Loading.parameters = {
+  msw: [], // 로딩이므로 mock 연결 X
+};

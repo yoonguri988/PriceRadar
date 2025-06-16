@@ -52,3 +52,18 @@ export interface ProductCardProps {
   onClick?: () => void;
   onFavoriteToggle?: () => void;
 }
+
+/** @desc 정렬 기준 및 필터 기준
+ * 가격순 | 이름순 | 가격 변동폭순
+ * 전체 | 품절 상품 제외 | 즐겨찾기만 보기
+ *
+ */
+export type SortOption = "price" | "name" | "discount";
+export type FilterOption = "all" | "favorites" | "inStock";
+
+export type ProductSortStoreProps = {
+  sort: SortOption;
+  filter: FilterOption;
+  setSort: (sort: SortOption) => void;
+  setFilter: (filter: FilterOption) => void;
+};

@@ -7,6 +7,8 @@ import {
   useProductList,
   ProductCard,
   ProductCardSkeleton,
+  useProductSortStore,
+  applySortAndFilter,
 } from "@/features/product";
 import { SORT_OPTIONS } from "@/lib/constants";
 
@@ -14,6 +16,7 @@ export function ProductList() {
   // 정렬 및 필터 조건
   const [order, setOrder] = useState("latest");
   const [category, setCategory] = useState("");
+  const { sort, filter } = useProductSortStore();
 
   const {
     data,
@@ -37,6 +40,7 @@ export function ProductList() {
   }, [fetchNextPage, hasNextPage]);
 
   const products = data?.pages.flatMap((page) => page?.items ?? []) ?? [];
+  const visibleProducts = applySortAndFilter(products, sort, filter);
 
   if (error) return <p>에러가 발생했습니다 😥</p>;
   if (products.length === 0) {
@@ -81,7 +85,7 @@ export function ProductList() {
       </div>
       {isLoading && (
         <div css={styles.gridContainer}>
-          {Array.from({ length: 8 }).map((_, i) => (
+          {Array.from({ length: 6 }).map((_, i) => (
             <ProductCardSkeleton key={i} />
           ))}
         </div>
