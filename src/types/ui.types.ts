@@ -4,8 +4,10 @@ import type {
   ReactNode,
 } from "react";
 import { SerializedStyles } from "@emotion/react";
+import { FilterOption, SortOption } from "@/features/product";
 
 export type EmptyState = {
+  icon?: ReactNode;
   title?: string;
   description?: string;
   action?: React.ReactNode;
@@ -31,3 +33,10 @@ export interface InputProps
   helperText?: string;
   css?: SerializedStyles | SerializedStyles[];
 }
+
+export type SortFilterControlsProps = {
+  sort: SortOption;
+  setSort: (sort: SortOption) => void;
+  filter: FilterOption;
+  setFilter: (filter: FilterOption) => void;
+};

@@ -63,7 +63,7 @@ export type FilterOption = "all" | "favorites" | "inStock";
 
 export type ProductSortStoreProps = {
   sort: SortOption;
-  filter: FilterOption;
   setSort: (sort: SortOption) => void;
+  filter: FilterOption;
   setFilter: (filter: FilterOption) => void;
 };

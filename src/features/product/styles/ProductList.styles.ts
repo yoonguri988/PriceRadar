@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
+export const ControlBar = css``;
 // Grid에 맞춰 카드 정렬 UI 구현
 export const gridContainer = css`
   display: grid;

@@ -25,3 +25,10 @@ export const WithAction: Story = {
     action: <Button>전체 상품 보기</Button>,
   },
 };
+export const WithCustomIcon: Story = {
+  args: {
+    title: "등록된 관심 상품이 없습니다",
+    description: "상품을 추가하고 가격을 추적해보세요.",
+    icon: <span style={{ fontSize: "2rem" }}>⭐️</span>,
+  },
+};

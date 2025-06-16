@@ -2,6 +2,8 @@
 import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
+import SortFilterControls from "@/components/ui/SortFilterControls";
+import { ORDER_OPTIONS, CATEGORY_OPTIONS } from "@/lib/constants";
 import {
   ListStyles as styles,
   useProductList,
@@ -10,14 +12,15 @@ import {
   useProductSortStore,
   applySortAndFilter,
 } from "@/features/product";
-import { SORT_OPTIONS } from "@/lib/constants";
 
 export function ProductList() {
   // 정렬 및 필터 조건
+  // server 호출
   const [order, setOrder] = useState("latest");
   const [category, setCategory] = useState("");
-  const { sort, filter } = useProductSortStore();
-
+  // client
+  const { sort, setSort, filter, setFilter } = useProductSortStore();
+useProductSortStore
   const {
     data,
     isLoading,
@@ -43,6 +46,18 @@ export function ProductList() {
   const visibleProducts = applySortAndFilter(products, sort, filter);
 
   if (error) return <p>에러가 발생했습니다 😥</p>;
+  if (!isLoading && visibleProducts.length === 0) {
+    return (
+      <EmptyState
+        icon={<span style={{ fontSize: "2rem" }}>🔍</span>}
+        title="검색 결과 없음"
+        description="조건을 변경해보세요!"
+        action={
+          <Button onClick={() => setFilter("all")}>전체 상품 보기</Button>
+        }
+      />
+    );
+  }
   if (products.length === 0) {
     // 상품 목록이 비어있는 경우
     return (
@@ -58,15 +73,30 @@ export function ProductList() {
 
   return (
     <div>
-      <select value={order} onChange={(e) => setOrder(e.target.value)}>
-        {SORT_OPTIONS.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
+      <div css={styles.ControlBar}>
+        <select value={order} onChange={(e) => setOrder(e.target.value)}>
+          {ORDER_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <select value={category} onChange={(e) => setOrder(e.target.value)}>
+          {CATEGORY_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
+      <SortFilterControls
+        sort={sort}
+        setSort={setSort}
+        filter={filter}
+        setFilter={setFilter}
+      />
       <div css={styles.gridContainer}>
-        {products.map((item) => (
+        {visibleProducts.map((item) => (
           <ProductCard
             key={item.id}
             name={item.name}
