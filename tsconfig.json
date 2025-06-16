@@ -21,7 +21,8 @@
       "@/hooks/*": ["src/hooks/*"],
       "@/lib/*": ["src/lib/*"],
       "@/types/*": ["src/types/*"],
-      "@/mock/*": ["src/mock/*"]
+      "@/mock/*": ["src/mock/*"],
+      "@/store/*": ["src/store/*"]
     },
     "plugins": [
       {

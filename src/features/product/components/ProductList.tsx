@@ -1,27 +1,64 @@
 /** @jsxImportSource @emotion/react */
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { ListStyles, useProductList, ProductCard } from "@/features/product";
-
-// 예: 정렬 기준 enum 또는 상수
-export const SORT_OPTIONS = [
-  { label: "최신순", value: "latest" },
-  { label: "낮은 가격순", value: "priceAsc" },
-  { label: "높은 가격순", value: "priceDesc" },
-];
+import SortFilterControls from "@/components/ui/SortFilterControls";
+import { ORDER_OPTIONS, CATEGORY_OPTIONS } from "@/lib/constants";
+import {
+  ListStyles as styles,
+  useProductList,
+  ProductCard,
+  ProductCardSkeleton,
+  useProductSortStore,
+  applySortAndFilter,
+} from "@/features/product";
 
 export function ProductList() {
   // 정렬 및 필터 조건
+  // server 호출
   const [order, setOrder] = useState("latest");
   const [category, setCategory] = useState("");
+  // client
+  const { sort, setSort, filter, setFilter } = useProductSortStore();
+useProductSortStore
+  const {
+    data,
+    isLoading,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useProductList({ order, category });
 
-  const { data, isLoading, error } = useProductList({ order, category });
+  const observerRef = useRef<HTMLDivElement | null>(null);
 
-  if (isLoading) return <p>로딩 중...</p>;
+  useEffect(() => {
+    if (!observerRef.current || !hasNextPage) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) fetchNextPage();
+    });
+
+    observer.observe(observerRef.current);
+    return () => observer.disconnect();
+  }, [fetchNextPage, hasNextPage]);
+
+  const products = data?.pages.flatMap((page) => page?.items ?? []) ?? [];
+  const visibleProducts = applySortAndFilter(products, sort, filter);
+
   if (error) return <p>에러가 발생했습니다 😥</p>;
-
-  if (data && data.length === 0) {
+  if (!isLoading && visibleProducts.length === 0) {
+    return (
+      <EmptyState
+        icon={<span style={{ fontSize: "2rem" }}>🔍</span>}
+        title="검색 결과 없음"
+        description="조건을 변경해보세요!"
+        action={
+          <Button onClick={() => setFilter("all")}>전체 상품 보기</Button>
+        }
+      />
+    );
+  }
+  if (products.length === 0) {
     // 상품 목록이 비어있는 경우
     return (
       <EmptyState
@@ -36,15 +73,30 @@ export function ProductList() {
 
   return (
     <div>
-      <select value={order} onChange={(e) => setOrder(e.target.value)}>
-        {SORT_OPTIONS.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-      <div css={ListStyles.gridContainer}>
-        {data?.map((item) => (
+      <div css={styles.ControlBar}>
+        <select value={order} onChange={(e) => setOrder(e.target.value)}>
+          {ORDER_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <select value={category} onChange={(e) => setOrder(e.target.value)}>
+          {CATEGORY_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
+      <SortFilterControls
+        sort={sort}
+        setSort={setSort}
+        filter={filter}
+        setFilter={setFilter}
+      />
+      <div css={styles.gridContainer}>
+        {visibleProducts.map((item) => (
           <ProductCard
             key={item.id}
             name={item.name}
@@ -61,6 +113,18 @@ export function ProductList() {
           />
         ))}
       </div>
+      {isLoading && (
+        <div css={styles.gridContainer}>
+          {Array.from({ length: 6 }).map((_, i) => (
+            <ProductCardSkeleton key={i} />
+          ))}
+        </div>
+      )}
+      {hasNextPage && (
+        <div ref={observerRef} css={styles.loader}>
+          {isFetchingNextPage ? "불러오는 중..." : "스크롤하여 더 보기"}
+        </div>
+      )}
     </div>
   );
 }
