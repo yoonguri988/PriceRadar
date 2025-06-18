@@ -1,12 +1,8 @@
-/** @jsxImportSource @emotion/react */
 "use client";
 
+import styles from "@/features/product/styles/Page.module.scss";
 import { useParams } from "next/navigation";
-import {
-  PageStyles as styles,
-  useProductDetail,
-  AlertToggle,
-} from "@/features/product";
+import { useProductDetail, AlertToggle } from "@/features/product";
 import PriceChart from "@/features/chart/components/PriceChart";
 
 const ProductDetailPage = () => {
@@ -17,18 +13,18 @@ const ProductDetailPage = () => {
   if (isError || !data) return <div>상품 정보를 불러올 수 없습니다.</div>;
 
   return (
-    <div css={styles.Container}>
-      <img css={styles.Image} src={data.imageUrl} alt={data.name} />
-      <div css={styles.Info}>
+    <div className={styles.container}>
+      <img className={styles.image} src={data.imageUrl} alt={data.name} />
+      <div className={styles.info}>
         <h2>{data.name}</h2>
         <strong>{data.price.toLocaleString()}원</strong>
       </div>
-      <div css={styles.ChartSection}>
+      <div className={styles["chart-section"]}>
         <h3>가격 히스토리</h3>
         <PriceChart productId={data.id} />
       </div>
-      {/* <div css={}>🔔 알림 설정 영역 (추후 구현)</div> */}
-      <div css={styles.AlertPlaceholder}>
+      {/* <div className={}>🔔 알림 설정 영역 (추후 구현)</div> */}
+      <div className={styles["alert-placeholder"]}>
         <AlertToggle productId={data.id} />
       </div>
     </div>

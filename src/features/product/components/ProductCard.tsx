@@ -1,5 +1,5 @@
-/** @jsxImportSource @emotion/react */
-import { CardStyles, ProductCardProps } from "@/features/product";
+import styles from "@/features/product/styles/ProductCard.module.scss";
+import { ProductCardProps } from "@/features/product";
 import { Star } from "lucide-react";
 
 export const ProductCard = ({
@@ -17,37 +17,39 @@ export const ProductCard = ({
   onFavoriteToggle,
 }: ProductCardProps) => {
   return (
-    <div css={CardStyles.card} onClick={onClick}>
-      <div css={CardStyles.imageWrapper}>
+    <div className={styles.card} onClick={onClick}>
+      <div className={styles["image-wrapper"]}>
         <img src={imageUrl} alt={name} />
       </div>
 
-      <div css={CardStyles.info}>
+      <div className={styles.info}>
         {Array.isArray(badges) && badges.length > 0 && (
-          <div css={CardStyles.badgeGroup}>
+          <div className={styles.badgeGroup}>
             {badges.map(({ text, color }, i) => (
-              <span key={i} css={CardStyles.dynamicBadge(color)}>
+              <span key={i} className={styles[`badge-${color}`]}>
                 {text}
               </span>
             ))}
           </div>
         )}
-        <p css={name}>{name}</p>
+        <p className={name}>{name}</p>
         {originalPrice && (
-          <p css={originalPrice}>{originalPrice.toLocaleString()}원</p>
+          <p className={styles["original-price"]}>
+            {originalPrice.toLocaleString()}원
+          </p>
         )}
-        <p css={price}>{price.toLocaleString()}원</p>
-        {isSoldOut && <p css={CardStyles.soldOut}>품절</p>}
-        {sellerName && <p css={CardStyles.seller}>판매처: {sellerName}</p>}
+        <p className={styles.price}>{price.toLocaleString()}원</p>
+        {isSoldOut && <p className={styles.soldOut}>품절</p>}
+        {sellerName && <p className={styles.seller}>판매처: {sellerName}</p>}
         {typeof reviewCount === "number" && (
-          <p css={CardStyles.review}>
+          <p className={styles.review}>
             <Star size={14} className="icon" /> {reviewCount} 리뷰
           </p>
         )}
-        {shippingInfo && <p css={CardStyles.shipping}>{shippingInfo}</p>}
+        {shippingInfo && <p className={styles.shipping}>{shippingInfo}</p>}
         {onFavoriteToggle && (
           <button
-            css={CardStyles.favoriteButton}
+            className={styles.favoriteButton}
             onClick={(e) => {
               e.stopPropagation();
               onFavoriteToggle();

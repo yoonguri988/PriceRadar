@@ -8,43 +8,21 @@
                 └── route.ts
             └── 📁products
                 └── route.ts
-        └── favicon.ico
-        └── globals.css
         └── layout.tsx
-        └── page.module.css
         └── page.tsx
         └── 📁products
             └── page.tsx
     └── 📁assets
-        └── accessibility.png
-        └── accessibility.svg
-        └── addon-library.png
-        └── assets.png
-        └── avif-test-image.avif
-        └── context.png
-        └── discord.svg
-        └── docs.png
-        └── figma-plugin.png
-        └── github.svg
-        └── share.png
-        └── styling.png
-        └── testing.png
-        └── theming.png
-        └── tutorials.svg
-        └── youtube.svg
     └── 📁components
         └── 📁layout
-            └── Footer.tsx
-            └── header.css
-            └── Header.tsx
         └── 📁ui
-            └── Button.styles.ts
+            └── Button.module.scss
             └── Button.tsx
-            └── EmptyState.styles.ts
+            └── EmptyState.module.scss
             └── EmptyState.tsx
-            └── Input.styles.ts
+            └── Input.module.scss
             └── Input.tsx
-            └── SortFilterControls.styles.ts
+            └── SortFilterControls.module.scss
             └── SortFilterControls.tsx
     └── 📁features
         └── 📁chart
@@ -84,9 +62,10 @@
                 └── ProductList.stories.tsx
                 └── ProductSortControls.tsx
             └── 📁styles
-                └── Page.styles.ts
-                └── ProductCard.styles.ts
-                └── ProductList.styles.ts
+                └── Page.module.scss
+                └── ProductCard.module.scss
+                └── ProductCardSkeleton.module.scss
+                └── ProductList.module.scss
             └── 📁types
                 └── product.type.ts
         └── 📁search
@@ -104,7 +83,6 @@
             └── 📁styles
             └── 📁types
     └── 📁hooks
-        └── useDebounce.ts
     └── 📁lib
         └── constants.ts
         └── formatter.ts
@@ -115,24 +93,17 @@
         └── mockProducts.json
     └── 📁store
         └── useAlertStore.ts
-        └── useProductStore.ts
     └── 📁stories
         └── Button.stories.tsx
-        └── Configure.mdx
         └── EmptyState.stories.tsx
-        └── Header.stories.ts
         └── Input.stories.tsx
-        └── page.css
-        └── Page.stories.ts
-        └── Page.tsx
         └── SortFilterControls.stories.tsx
     └── 📁styles
-        └── global.tsx
-        └── reset.css
-        └── theme.ts
+        └── global.scss
+        └── 📁pages
+            └── home.module.scss
     └── 📁types
         └── alert.types.ts
-        └── global.d.ts
         └── ui.types.ts
 ```
 
