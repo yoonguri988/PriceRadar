@@ -11,7 +11,4 @@ export * from "./hooks/useProductList";
 export * from "./hooks/useProductDetail";
 export * from "./lib/applySortAndFilter";
 export * from "./store/useProductSortStore";
-export * as CardStyles from "./styles/ProductCard.styles";
-export * as ListStyles from "./styles/ProductList.styles";
-export * as PageStyles from "./styles/Page.styles";
 export * from "./types/product.type";

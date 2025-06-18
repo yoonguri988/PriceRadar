@@ -3,7 +3,6 @@ import {
   Product,
   GetProductListResponse,
 } from "@/features/product";
-import { PAGE_STANDARD } from "@/lib/constants";
 
 export const getProductList = async ({
   order = "latest",

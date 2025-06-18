@@ -1,16 +1,15 @@
-/** @jsxImportSource @emotion/react */
-
 /**
  * 정렬 및 필터 Component
  */
 
-import { useProductSortStore, ListStyles as styles } from "@/features/product";
+import { useProductSortStore } from "@/features/product";
+import styles from "@/features/product/styles/ProductList.module.scss";
 
 export const ProductSortControls = () => {
   const { sort, setSort, filter, setFilter } = useProductSortStore();
 
   return (
-    <div css={styles.SortContainer}>
+    <div className={styles["sort-container"]}>
       <select value={sort} onChange={(e) => setSort(e.target.value as any)}>
         <option value="price">가격순</option>
         <option value="name">이름순</option>

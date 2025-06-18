@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import * as styles from "@/components/ui/Input.styles";
+import styles from "@/components/ui/Input.module.scss";
 import { InputProps } from "@/types/ui.types";
 
 /** Primary UI component for user interaction */
@@ -8,7 +7,6 @@ export const Input = ({
   error,
   label,
   icon,
-  css,
   helperText,
   id,
   ...props
@@ -19,26 +17,29 @@ export const Input = ({
   return (
     <div>
       {label && (
-        <label htmlFor={inputId} css={styles.label}>
+        <label htmlFor={inputId} className={styles.label}>
           {label}
         </label>
       )}
-      <div css={icon ? styles.iconWrapper : undefined}>
+      <div className={icon ? styles.iconWrapper : undefined}>
         {icon && <span className="icon">{icon}</span>}
       </div>
       <input
         id={inputId}
-        css={[styles.base, styles.sizes[size], error && styles.error]}
+        className={`${styles.base} ${styles[`size-${size}`]} ${
+          error && styles.error
+        }`}
+        // className={[styles.base, styles[`size-${size}`], error && styles.error]}
         aria-invalid={!!error}
         aria-describedby={helperText || error ? descriptionId : undefined}
         {...props}
       />
       {error ? (
-        <p css={styles.errorMsg} id={descriptionId}>
+        <p className={styles["error-msg"]} id={descriptionId}>
           {error}
         </p>
       ) : helperText ? (
-        <p css={styles.helperText} id={descriptionId}>
+        <p className={styles["helper-text"]} id={descriptionId}>
           {helperText}
         </p>
       ) : null}

@@ -1,0 +1,49 @@
+/* src/features/product/styles/ProductCardSkeleton.module.scss */
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.box {
+  width: 100%;
+  height: 200px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.text {
+  background: #e0e0e0;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.text-sm {
+  height: 12px;
+}
+
+.text-md {
+  height: 14px;
+}
+
+.text-lg {
+  height: 16px;
+}

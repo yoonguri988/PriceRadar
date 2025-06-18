@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import * as styles from "@/components/ui/Button.styles";
+import styles from "@/components/ui/Button.module.scss";
 import { ButtonProps } from "@/types/ui.types";
 
 export const Button = ({
@@ -16,16 +15,16 @@ export const Button = ({
 
   return (
     <button
-      css={[styles.base, styles.sizes[size], styles.variant[variant]]}
+      className={`${styles.base} ${styles["variant-primary"]} ${styles["size-md"]}`}
       {...props}
     >
-      {isLoading && <span css={styles.spinner} aria-hidden />}
+      {isLoading && <span className={styles.spinner} aria-hidden />}
       {!isLoading && icon && iconPosition === "left" && (
-        <span css={styles.iconLeft}>{icon}</span>
+        <span className={styles["icon-left"]}>{icon}</span>
       )}
       {children}
       {!isLoading && icon && iconPosition === "right" && (
-        <span css={styles.iconRight}>{icon}</span>
+        <span className={styles["icon-right"]}>{icon}</span>
       )}
     </button>
   );

@@ -1,26 +1,24 @@
-/** @jsxImportSource @emotion/react */
-import { css, keyframes } from "@emotion/react";
-
-export const container = css`
+/* src/components/ui/EmptyState.module.scss */
+.container {
   text-align: center;
   padding: 4rem 2rem;
   color: #666;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+}
 
-export const imageIcon = css`
+.imageIcon {
   margin-bottom: 1rem;
   color: "#ccc";
-`;
+}
 
-export const title = css`
+.title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-`;
+}
 
-export const content = css`
+.content {
   font-size: 0.95rem;
   margin-bottom: 1rem;
-`;
+}

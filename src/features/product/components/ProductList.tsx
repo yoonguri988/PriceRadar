@@ -1,11 +1,10 @@
-/** @jsxImportSource @emotion/react */
+import styles from "@/features/product/styles/ProductList.module.scss";
 import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
 import SortFilterControls from "@/components/ui/SortFilterControls";
 import { ORDER_OPTIONS, CATEGORY_OPTIONS } from "@/lib/constants";
 import {
-  ListStyles as styles,
   useProductList,
   ProductCard,
   ProductCardSkeleton,
@@ -20,7 +19,7 @@ export function ProductList() {
   const [category, setCategory] = useState("");
   // client
   const { sort, setSort, filter, setFilter } = useProductSortStore();
-useProductSortStore
+  useProductSortStore;
   const {
     data,
     isLoading,
@@ -73,7 +72,7 @@ useProductSortStore
 
   return (
     <div>
-      <div css={styles.ControlBar}>
+      <div className={styles["control-bar"]}>
         <select value={order} onChange={(e) => setOrder(e.target.value)}>
           {ORDER_OPTIONS.map((option) => (
             <option key={option.value} value={option.value}>
@@ -95,7 +94,7 @@ useProductSortStore
         filter={filter}
         setFilter={setFilter}
       />
-      <div css={styles.gridContainer}>
+      <div className={styles["grid-container"]}>
         {visibleProducts.map((item) => (
           <ProductCard
             key={item.id}
@@ -114,14 +113,14 @@ useProductSortStore
         ))}
       </div>
       {isLoading && (
-        <div css={styles.gridContainer}>
+        <div className={styles["grid-container"]}>
           {Array.from({ length: 6 }).map((_, i) => (
             <ProductCardSkeleton key={i} />
           ))}
         </div>
       )}
       {hasNextPage && (
-        <div ref={observerRef} css={styles.loader}>
+        <div ref={observerRef} className={styles.loader}>
           {isFetchingNextPage ? "불러오는 중..." : "스크롤하여 더 보기"}
         </div>
       )}
