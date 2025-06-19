@@ -1,4 +1,9 @@
-// src/styles/global.module.scss
+/* 전역 스타일 (reset 포함) */
+@import "./variables";
+@import "./mixins";
+@import "./media";
+@import "./base";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +12,6 @@
 
 body {
   font-family: "Pretendard", sans-serif;
-  background-color: #fafafa;
   color: #222;
+  background-color: #fafafa;
 }

@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react-jsx", // React 17+ 자동 JSX 변환 방식 사용
+    "jsx": "preserve", // React 17+ 자동 JSX 변환 방식 사용
     "allowJs": true,
     "strict": true,
     "noEmit": true,
@@ -15,14 +19,30 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/features/*": ["src/features/*"],
-      "@/components/*": ["src/components/*"],
-      "@/styles/*": ["src/styles/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/lib/*": ["src/lib/*"],
-      "@/types/*": ["src/types/*"],
-      "@/mock/*": ["src/mock/*"],
-      "@/store/*": ["src/store/*"]
+      "@/features/*": [
+        "src/features/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/lib/*": [
+        "src/lib/*"
+      ],
+      "@/types/*": [
+        "src/types/*"
+      ],
+      "@/mock/*": [
+        "src/mock/*"
+      ],
+      "@/store/*": [
+        "src/store/*"
+      ]
     },
     "plugins": [
       {
@@ -30,6 +50,13 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
