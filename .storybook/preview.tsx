@@ -1,19 +1,13 @@
-import { ThemeProvider } from "@emotion/react";
-import { theme } from "../src/styles/theme";
 import type { Preview } from "@storybook/nextjs-vite";
 import { initialize, mswLoader } from "msw-storybook-addon";
+import "@/styles/global.scss"; // 글로벌 스타일 적용
 
 initialize(); // 초기화
+
 export const loaders = [mswLoader];
 
 const preview: Preview = {
-  decorators: [
-    (Story) => (
-      <ThemeProvider theme={theme}>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  decorators: [(Story) => <Story />],
   parameters: {
     controls: {
       matchers: {

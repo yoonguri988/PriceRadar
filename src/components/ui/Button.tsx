@@ -15,7 +15,11 @@ export const Button = ({
 
   return (
     <button
-      className={`${styles.base} ${styles["variant-primary"]} ${styles["size-md"]}`}
+      className={`
+        ${styles[`variant-${variant}`]}
+        ${styles[`size-${size}`]}
+      `}
+      disabled={isDisabled}
       {...props}
     >
       {isLoading && <span className={styles.spinner} aria-hidden />}

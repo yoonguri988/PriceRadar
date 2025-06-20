@@ -1,0 +1,8 @@
+/* 반응형 유틸리티 */
+$breakpoint-md: 768px;
+
+@mixin respond-md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}

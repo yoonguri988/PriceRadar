@@ -3,7 +3,7 @@
 import styles from "@/features/product/styles/Page.module.scss";
 import { useParams } from "next/navigation";
 import { useProductDetail, AlertToggle } from "@/features/product";
-import PriceChart from "@/features/chart/components/PriceChart";
+// import PriceChart from "@/features/chart/components/PriceChart";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const ProductDetailPage = () => {
       </div>
       <div className={styles["chart-section"]}>
         <h3>가격 히스토리</h3>
-        <PriceChart productId={data.id} />
+        {/* <PriceChart productId={data.id} /> */}
       </div>
       {/* <div className={}>🔔 알림 설정 영역 (추후 구현)</div> */}
       <div className={styles["alert-placeholder"]}>

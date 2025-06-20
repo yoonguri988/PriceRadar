@@ -1,3 +1,4 @@
+import path from "path";
 import type { StorybookConfig } from "@storybook/nextjs-vite";
 
 const config: StorybookConfig = {
@@ -16,5 +17,13 @@ const config: StorybookConfig = {
     options: {},
   },
   staticDirs: ["..\\public"],
+  viteFinal: async (config) => {
+    config.resolve = {
+      alias: {
+        "@": path.resolve(__dirname, "../src"),
+      },
+    };
+    return config;
+  },
 };
 export default config;

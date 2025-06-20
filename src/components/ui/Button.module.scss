@@ -1,56 +1,30 @@
 /* src/components/ui/Button.module.scss */
-
-/* 공통 스타일 */
-.base {
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 크기별 스타일 */
-.size-sm {
-  font-size: 12px;
-  padding: 4px 10px;
-}
-
-.size-md {
-  font-size: 16px;
-  padding: 8px 16px;
-}
-
-.size-lg {
-  font-size: 18px;
-  padding: 12px 20px;
-}
+@import "@/styles/variables";
+@import "@/styles/base";
 
 /* 버튼 타입별 스타일 */
 .variant-primary {
-  background-color: #7346f3;
-  color: #ffffff;
+  background-color: $color-primary;
+  color: $color-text-point;
   border: none;
 
   &:hover {
-    opacity: 0.9;
+    background-color: darken($color-primary, 10%);
   }
 
   &:disabled {
-    background-color: #cccccc;
+    background-color: $color-disabled;
     cursor: not-allowed;
   }
 }
 
 .variant-secondary {
   background-color: transparent;
-  color: #7346f3;
-  border: 1px solid #7346f3;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
 
   &:hover {
-    background-color: #f3f0ff;
+    background-color: $color-background;
   }
 
   &:disabled {
@@ -82,7 +56,7 @@
 .spinner {
   width: 16px;
   height: 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-border;
   border-top-color: transparent;
   border-radius: 50%;
   animation: spin 0.6s linear infinite;

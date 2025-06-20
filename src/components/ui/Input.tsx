@@ -16,26 +16,19 @@ export const Input = ({
 
   return (
     <div>
-      {label && (
-        <label htmlFor={inputId} className={styles.label}>
-          {label}
-        </label>
-      )}
-      <div className={icon ? styles.iconWrapper : undefined}>
-        {icon && <span className="icon">{icon}</span>}
+      {label && <label htmlFor={inputId}>{label}</label>}
+      <div className={icon ? styles[`icon-wrapper`] : undefined}>
+        {icon && <span className={styles.icon}>{icon}</span>}
+        <input
+          id={inputId}
+          className={`${styles[`size-${size}`]} ${error && styles.error}`}
+          aria-invalid={!!error}
+          aria-describedby={helperText || error ? descriptionId : undefined}
+          {...props}
+        />
       </div>
-      <input
-        id={inputId}
-        className={`${styles.base} ${styles[`size-${size}`]} ${
-          error && styles.error
-        }`}
-        // className={[styles.base, styles[`size-${size}`], error && styles.error]}
-        aria-invalid={!!error}
-        aria-describedby={helperText || error ? descriptionId : undefined}
-        {...props}
-      />
       {error ? (
-        <p className={styles["error-msg"]} id={descriptionId}>
+        <p className={styles["error"]} id={descriptionId}>
           {error}
         </p>
       ) : helperText ? (

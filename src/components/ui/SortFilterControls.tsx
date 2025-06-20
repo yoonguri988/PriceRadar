@@ -15,33 +15,31 @@ const SortFilterControls = ({
   return (
     <div className={styles.container}>
       <div className={styles["button-group"]}>
-        {SORT_OPTIONS.map(({ value, label }) => {
-          const selected = sort === value;
+        {FILTER_OPTIONS.map(({ value, label }) => {
+          const selected = filter === value;
           return (
             <motion.button
               key={value}
-              onClick={() => setSort(value)}
-              className={`${styles[`sort-button`]} ${selected}`}
+              onClick={() => setFilter(value)}
+              className={
+                selected
+                  ? `${styles["filter-button"]} ${styles["selected"]}`
+                  : styles["filter-button"]
+              }
               whileTap={{ scale: 0.95 }}
             >
               {label}
-              {selected && (
-                <motion.span
-                  layoutId="active-sort-indicator"
-                  className={styles[`active-dot`]}
-                />
-              )}
             </motion.button>
           );
         })}
       </div>
 
       <select
-        className={styles["filter-select"]}
-        value={filter}
-        onChange={(e) => setFilter(e.target.value as FilterOption)}
+        className={styles["sort-select"]}
+        value={sort}
+        onChange={(e) => setSort(e.target.value as SortOption)}
       >
-        {FILTER_OPTIONS.map(({ value, label }) => (
+        {SORT_OPTIONS.map(({ value, label }) => (
           <option key={value} value={value}>
             {label}
           </option>

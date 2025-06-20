@@ -1,4 +1,3 @@
-"use client";
 /**
  * @todo 공통 레이아웃
  */

@@ -30,7 +30,6 @@ export const Primary: Story = {
     children: "확인",
     variant: "primary",
     disabled: false,
-    size: "md",
   },
 };
 
@@ -38,6 +37,7 @@ export const Secondary: Story = {
   args: {
     children: "취소",
     variant: "secondary",
+    disabled: false,
   },
 };
 

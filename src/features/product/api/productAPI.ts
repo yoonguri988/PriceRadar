@@ -5,13 +5,13 @@ import {
 } from "@/features/product";
 
 export const getProductList = async ({
-  order = "latest",
-  category,
+  sort = "latest",
+  filter,
   page = 1,
 }: SearchParams): Promise<GetProductListResponse> => {
   const params = new URLSearchParams();
-  if (order) params.append("order", order);
-  if (category) params.append("category", category);
+  if (sort) params.append("sort", sort);
+  if (filter) params.append("filter", filter);
   if (page) params.append("page", String(page));
 
   const res = await fetch(`/api/products?${params.toString()}`);

@@ -1,4 +1,20 @@
-### 프로젝트 구조 요약
+## 프로젝트 구조 요약
+
+### 본 프로젝트는 기능 단위로 폴더를 구성합니다.
+
+각 기능 폴더는 다음과 같은 하위 구조를 가집니다:
+
+- components
+- api
+- hooks
+- styles
+- stories
+- types
+
+### SCSS 전역(Global) vs 모듈(Module) 구분
+
+- Global : 전체 레이아웃, Reset, Theme
+- Module : 개별 컴포넌트 스타일링
 
 ```
 └── 📁src
@@ -31,16 +47,17 @@
             └── 📁components
                 └── PriceChart.tsx
             └── 📁hooks
+                └── useD3PriceChart.ts
                 └── usePriceHistory.ts
             └── index.ts
+            └── 📁lib
+                └── drawChart.ts
             └── 📁stories
                 └── PriceChart.stories.tsx
             └── 📁styles
             └── 📁types
                 └── chart.type.ts
         └── 📁product
-            └── 📁[id]
-                └── page.tsx
             └── 📁api
                 └── productAPI.ts
             └── 📁components
@@ -99,14 +116,21 @@
         └── Input.stories.tsx
         └── SortFilterControls.stories.tsx
     └── 📁styles
+        └── _base.scss
+        └── _media.scss
+        └── _mixins.scss
+        └── _variables.scss
         └── global.scss
         └── 📁pages
             └── home.module.scss
     └── 📁types
         └── alert.types.ts
         └── ui.types.ts
+    └── 📁views
+        └── 📁Home
+            └── index.tsx
+        └── 📁ProductDetail
+            └── index.tsx
+        └── 📁Search
+            └── index.tsx
 ```
-
-### 폴더 구조 생성
-
-mkdir -p src/features/[기능 단위]/{components,styles,stories,api,hooks,types}

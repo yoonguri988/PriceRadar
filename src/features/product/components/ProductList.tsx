@@ -3,7 +3,6 @@ import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
 import SortFilterControls from "@/components/ui/SortFilterControls";
-import { ORDER_OPTIONS, CATEGORY_OPTIONS } from "@/lib/constants";
 import {
   useProductList,
   ProductCard,
@@ -14,10 +13,6 @@ import {
 
 export function ProductList() {
   // 정렬 및 필터 조건
-  // server 호출
-  const [order, setOrder] = useState("latest");
-  const [category, setCategory] = useState("");
-  // client
   const { sort, setSort, filter, setFilter } = useProductSortStore();
   useProductSortStore;
   const {
@@ -27,7 +22,7 @@ export function ProductList() {
     fetchNextPage,
     hasNextPage,
     isFetchingNextPage,
-  } = useProductList({ order, category });
+  } = useProductList({ sort, filter });
 
   const observerRef = useRef<HTMLDivElement | null>(null);
 
@@ -64,7 +59,7 @@ export function ProductList() {
         title="상품이 없습니다."
         description="선택한 조건에 맞는 상품을 찾지 못했어요."
         action={
-          <Button onClick={() => setOrder("latest")}>전체 상품 보기</Button>
+          <Button onClick={() => setSort("latest")}>전체 상품 보기</Button>
         }
       />
     );
@@ -72,22 +67,6 @@ export function ProductList() {
 
   return (
     <div>
-      <div className={styles["control-bar"]}>
-        <select value={order} onChange={(e) => setOrder(e.target.value)}>
-          {ORDER_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-        <select value={category} onChange={(e) => setOrder(e.target.value)}>
-          {CATEGORY_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-      </div>
       <SortFilterControls
         sort={sort}
         setSort={setSort}
