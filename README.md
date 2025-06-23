@@ -1,4 +1,17 @@
-### 프로젝트 구조 요약
+## 프로젝트 구조 요약
+
+### 본 프로젝트는 기능 단위로 폴더를 구성합니다.
+
+각 기능 폴더는 다음과 같은 하위 구조를 가집니다:
+
+- components
+- api
+- hooks
+- styles
+- stories
+- types
+
+### 폴더 구조
 
 ```
 └── 📁src
@@ -16,13 +29,9 @@
     └── 📁components
         └── 📁layout
         └── 📁ui
-            └── Button.module.scss
             └── Button.tsx
-            └── EmptyState.module.scss
             └── EmptyState.tsx
-            └── Input.module.scss
             └── Input.tsx
-            └── SortFilterControls.module.scss
             └── SortFilterControls.tsx
     └── 📁features
         └── 📁chart
@@ -30,17 +39,19 @@
                 └── chartAPI.ts
             └── 📁components
                 └── PriceChart.tsx
+                └── PriceChartSkeleton.tsx
             └── 📁hooks
+                └── useD3PriceChart.ts
                 └── usePriceHistory.ts
             └── index.ts
+            └── 📁lib
+                └── drawChart.ts
             └── 📁stories
                 └── PriceChart.stories.tsx
             └── 📁styles
             └── 📁types
                 └── chart.type.ts
         └── 📁product
-            └── 📁[id]
-                └── page.tsx
             └── 📁api
                 └── productAPI.ts
             └── 📁components
@@ -62,10 +73,6 @@
                 └── ProductList.stories.tsx
                 └── ProductSortControls.tsx
             └── 📁styles
-                └── Page.module.scss
-                └── ProductCard.module.scss
-                └── ProductCardSkeleton.module.scss
-                └── ProductList.module.scss
             └── 📁types
                 └── product.type.ts
         └── 📁search
@@ -94,19 +101,31 @@
     └── 📁store
         └── useAlertStore.ts
     └── 📁stories
+        └── button.css
+        └── Button.stories.ts
         └── Button.stories.tsx
+        └── Button.tsx
+        └── Configure.mdx
         └── EmptyState.stories.tsx
+        └── header.css
+        └── Header.stories.ts
+        └── Header.tsx
         └── Input.stories.tsx
+        └── page.css
+        └── Page.stories.ts
+        └── Page.tsx
         └── SortFilterControls.stories.tsx
     └── 📁styles
-        └── global.scss
+        └── globals.css
         └── 📁pages
-            └── home.module.scss
     └── 📁types
         └── alert.types.ts
         └── ui.types.ts
+    └── 📁views
+        └── 📁Home
+            └── index.tsx
+        └── 📁ProductDetail
+            └── index.tsx
+        └── 📁Search
+            └── index.tsx
 ```
-
-### 폴더 구조 생성
-
-mkdir -p src/features/[기능 단위]/{components,styles,stories,api,hooks,types}

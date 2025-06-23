@@ -2,12 +2,11 @@
  * @todo 홈페이지
  * src/app/page.tsx
  */
-import { Metadata } from "next";
-import "@/styles/pages/home.module.scss";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "PriceRadar",
-  description: "상품 가격을 추적하고 알림을 받아보세요.",
+  title: 'PriceRadar',
+  description: '상품 가격을 추적하고 알림을 받아보세요.',
 };
 
 export default function HomePage() {

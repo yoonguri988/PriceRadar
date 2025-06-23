@@ -1,8 +1,7 @@
-"use client";
 /**
  * @todo 공통 레이아웃
  */
-import "@/styles/global.scss";
+import "@/styles/global.css";
 import { ReactNode } from "react";
 import { ReactQueryClientProvider } from "@/lib/ReactQueryClientProvider";
 

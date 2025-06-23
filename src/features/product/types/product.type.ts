@@ -12,8 +12,8 @@
 
 // api 파라미터
 export type SearchParams = {
-  order?: string;
-  category?: string;
+  sort?: string;
+  filter?: string;
   page?: number;
 };
 
@@ -54,12 +54,23 @@ export interface ProductCardProps {
 }
 
 /** @desc 정렬 기준 및 필터 기준
- * 가격순 | 이름순 | 가격 변동폭순
+ * 최신순 | 낮은 가격순 | 높은 가격순 | 리뷰 많은순 | 신상품순
  * 전체 | 품절 상품 제외 | 즐겨찾기만 보기
  *
  */
-export type SortOption = "price" | "name" | "discount";
-export type FilterOption = "all" | "favorites" | "inStock";
+export type SortOption =
+  | "all"
+  | "priceAsc"
+  | "priceDesc"
+  | "reviewDesc"
+  | "latest";
+export type FilterOption =
+  | "all"
+  | "electronics"
+  | "fashion"
+  | "beauty"
+  | "sports"
+  | "books";
 
 export type ProductSortStoreProps = {
   sort: SortOption;

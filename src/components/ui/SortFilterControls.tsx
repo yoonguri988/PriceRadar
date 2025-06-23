@@ -1,10 +1,9 @@
 // src/components/ui/SortFilterControls.tsx
-import styles from "@/components/ui/SortFilterControls.module.scss";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { FilterOption, SortOption } from "@/features/product";
-import { FILTER_OPTIONS, SORT_OPTIONS } from "@/lib/constants";
-import { SortFilterControlsProps } from "@/types/ui.types";
+import { FilterOption, SortOption } from '@/features/product';
+import { FILTER_OPTIONS, SORT_OPTIONS } from '@/lib/constants';
+import { SortFilterControlsProps } from '@/types/ui.types';
 
 const SortFilterControls = ({
   sort,
@@ -13,35 +12,29 @@ const SortFilterControls = ({
   setFilter,
 }: SortFilterControlsProps) => {
   return (
-    <div className={styles.container}>
-      <div className={styles["button-group"]}>
-        {SORT_OPTIONS.map(({ value, label }) => {
-          const selected = sort === value;
+    <div className={``}>
+      <div className={``}>
+        {FILTER_OPTIONS.map(({ value, label }) => {
+          const selected = filter === value;
           return (
             <motion.button
               key={value}
-              onClick={() => setSort(value)}
-              className={`${styles[`sort-button`]} ${selected}`}
+              onClick={() => setFilter(value)}
+              className={``}
               whileTap={{ scale: 0.95 }}
             >
               {label}
-              {selected && (
-                <motion.span
-                  layoutId="active-sort-indicator"
-                  className={styles[`active-dot`]}
-                />
-              )}
             </motion.button>
           );
         })}
       </div>
 
       <select
-        className={styles["filter-select"]}
-        value={filter}
-        onChange={(e) => setFilter(e.target.value as FilterOption)}
+        className={``}
+        value={sort}
+        onChange={(e) => setSort(e.target.value as SortOption)}
       >
-        {FILTER_OPTIONS.map(({ value, label }) => (
+        {SORT_OPTIONS.map(({ value, label }) => (
           <option key={value} value={value}>
             {label}
           </option>

@@ -1,9 +1,8 @@
-import styles from "@/components/ui/Input.module.scss";
-import { InputProps } from "@/types/ui.types";
+import { InputProps } from '@/types/ui.types';
 
 /** Primary UI component for user interaction */
 export const Input = ({
-  size = "md",
+  size = 'md',
   error,
   label,
   icon,
@@ -16,30 +15,23 @@ export const Input = ({
 
   return (
     <div>
-      {label && (
-        <label htmlFor={inputId} className={styles.label}>
-          {label}
-        </label>
-      )}
-      <div className={icon ? styles.iconWrapper : undefined}>
-        {icon && <span className="icon">{icon}</span>}
+      {label && <label htmlFor={inputId}>{label}</label>}
+      <div className={``}>
+        {icon && <span className={``}>{icon}</span>}
+        <input
+          id={inputId}
+          className={``}
+          aria-invalid={!!error}
+          aria-describedby={helperText || error ? descriptionId : undefined}
+          {...props}
+        />
       </div>
-      <input
-        id={inputId}
-        className={`${styles.base} ${styles[`size-${size}`]} ${
-          error && styles.error
-        }`}
-        // className={[styles.base, styles[`size-${size}`], error && styles.error]}
-        aria-invalid={!!error}
-        aria-describedby={helperText || error ? descriptionId : undefined}
-        {...props}
-      />
       {error ? (
-        <p className={styles["error-msg"]} id={descriptionId}>
+        <p className={``} id={descriptionId}>
           {error}
         </p>
       ) : helperText ? (
-        <p className={styles["helper-text"]} id={descriptionId}>
+        <p className={``} id={descriptionId}>
           {helperText}
         </p>
       ) : null}

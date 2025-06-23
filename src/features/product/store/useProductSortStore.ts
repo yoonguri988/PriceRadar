@@ -6,7 +6,7 @@ import { ProductSortStoreProps } from "@/features/product";
 export const useProductSortStore = create<ProductSortStoreProps>()(
   persist(
     (set) => ({
-      sort: "price",
+      sort: "all",
       filter: "all",
       setSort: (sort) => set({ sort }),
       setFilter: (filter) => set({ filter }),

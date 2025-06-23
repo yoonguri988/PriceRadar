@@ -1,30 +1,26 @@
-import styles from "@/components/ui/Button.module.scss";
-import { ButtonProps } from "@/types/ui.types";
+import { ButtonProps } from '@/types/ui.types';
 
 export const Button = ({
   children,
-  variant = "primary",
-  size = "md",
+  variant = 'primary',
+  size = 'md',
   isLoading = false,
   icon,
-  iconPosition = "left",
+  iconPosition = 'left',
   disabled,
   ...props
 }: ButtonProps) => {
   const isDisabled = disabled || isLoading;
 
   return (
-    <button
-      className={`${styles.base} ${styles["variant-primary"]} ${styles["size-md"]}`}
-      {...props}
-    >
-      {isLoading && <span className={styles.spinner} aria-hidden />}
-      {!isLoading && icon && iconPosition === "left" && (
-        <span className={styles["icon-left"]}>{icon}</span>
+    <button className={``} disabled={isDisabled} {...props}>
+      {isLoading && <span className={``} aria-hidden />}
+      {!isLoading && icon && iconPosition === 'left' && (
+        <span className={``}>{icon}</span>
       )}
       {children}
-      {!isLoading && icon && iconPosition === "right" && (
-        <span className={styles["icon-right"]}>{icon}</span>
+      {!isLoading && icon && iconPosition === 'right' && (
+        <span className={``}>{icon}</span>
       )}
     </button>
   );

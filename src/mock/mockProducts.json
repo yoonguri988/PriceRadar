@@ -1,6 +1,7 @@
 [
   {
     "id": "product_1",
+    "category": "electronics",
     "name": "아이폰 15 Pro",
     "price": 1450000,
     "originalPrice": 1590000,
@@ -17,6 +18,7 @@
   {
     "id": "product_2",
     "name": "갤럭시 Z 플립 6",
+    "category": "electronics",
     "price": 1350000,
     "imageUrl": "https://via.placeholder.com/300",
     "seller": "Samsung 스토어",
@@ -28,11 +30,36 @@
   {
     "id": "product_3",
     "name": "아이폰 15",
+    "category": "electronics",
     "price": 1850000,
     "imageUrl": "https://via.placeholder.com/300",
     "seller": "Samsung 스토어",
     "reviewCount": 78,
     "shippingInfo": "배송비 3,000원",
+    "isSoldOut": false,
+    "badges": []
+  },
+  {
+    "id": "product_4",
+    "name": "나이키 에어조던",
+    "category": "sports",
+    "price": 139000,
+    "imageUrl": "https://via.placeholder.com/300",
+    "seller": "나이키 온라인 스토어",
+    "reviewCount": 1502,
+    "shippingInfo": "배송비 무료",
+    "isSoldOut": false,
+    "badges": []
+  },
+  {
+    "id": "product_5",
+    "name": "슬픔을 공부하는 슬픔",
+    "category": "books",
+    "price": 22000,
+    "imageUrl": "https://via.placeholder.com/300",
+    "seller": "교보문고",
+    "reviewCount": 205,
+    "shippingInfo": "배송비 2500원",
     "isSoldOut": false,
     "badges": []
   }
