@@ -11,10 +11,7 @@
 - stories
 - types
 
-### SCSS 전역(Global) vs 모듈(Module) 구분
-
-- Global : 전체 레이아웃, Reset, Theme
-- Module : 개별 컴포넌트 스타일링
+### 폴더 구조
 
 ```
 └── 📁src
@@ -32,13 +29,9 @@
     └── 📁components
         └── 📁layout
         └── 📁ui
-            └── Button.module.scss
             └── Button.tsx
-            └── EmptyState.module.scss
             └── EmptyState.tsx
-            └── Input.module.scss
             └── Input.tsx
-            └── SortFilterControls.module.scss
             └── SortFilterControls.tsx
     └── 📁features
         └── 📁chart
@@ -56,7 +49,6 @@
             └── 📁stories
                 └── PriceChart.stories.tsx
             └── 📁styles
-                └── Chart.module.scss
             └── 📁types
                 └── chart.type.ts
         └── 📁product
@@ -81,10 +73,6 @@
                 └── ProductList.stories.tsx
                 └── ProductSortControls.tsx
             └── 📁styles
-                └── Page.module.scss
-                └── ProductCard.module.scss
-                └── ProductCardSkeleton.module.scss
-                └── ProductList.module.scss
             └── 📁types
                 └── product.type.ts
         └── 📁search
@@ -128,13 +116,8 @@
         └── Page.tsx
         └── SortFilterControls.stories.tsx
     └── 📁styles
-        └── _base.scss
-        └── _media.scss
-        └── _mixins.scss
-        └── _variables.scss
-        └── global.scss
+        └── globals.css
         └── 📁pages
-            └── home.module.scss
     └── 📁types
         └── alert.types.ts
         └── ui.types.ts

@@ -2,14 +2,13 @@
  * 정렬 및 필터 Component
  */
 
-import { useProductSortStore } from "@/features/product";
-import styles from "@/features/product/styles/ProductList.module.scss";
+import { useProductSortStore } from '@/features/product';
 
 export const ProductSortControls = () => {
   const { sort, setSort, filter, setFilter } = useProductSortStore();
 
   return (
-    <div className={styles["sort-container"]}>
+    <div className={``}>
       <select value={sort} onChange={(e) => setSort(e.target.value as any)}>
         <option value="price">가격순</option>
         <option value="name">이름순</option>

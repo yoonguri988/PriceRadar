@@ -1,18 +1,12 @@
-// .eslintrc.js
 module.exports = {
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    project: "./tsconfig.json",
-    ecmaVersion: 2020,
-    sourceType: "module",
-  },
   extends: [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended",
+    "prettier",
   ],
+  parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   rules: {
-    // 필요에 따라 커스텀 규칙 추가
+    // 예: "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
   },
 };

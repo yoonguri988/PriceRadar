@@ -3,22 +3,22 @@
  * { Meta, StoryObj }는 자동 타입 추론 + Docs 호환성이 좋음
  */
 
-import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { Button } from "@/components/ui/Button";
-import { Search } from "lucide-react";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from '@/components/ui/Button';
+import { Search } from 'lucide-react';
 
 const meta = {
-  title: "UI/Button",
+  title: 'UI/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     variant: {
-      control: "select",
-      options: ["primary", "secondary"],
+      control: 'select',
+      options: ['primary', 'secondary'],
     },
-    size: { control: "select", options: ["sm", "md", "lg"] },
-    onClick: { action: "clicked" },
-    disabled: { control: "boolean" },
+    size: { control: 'select', options: ['sm', 'md', 'lg'] },
+    onClick: { action: 'clicked' },
+    disabled: { control: 'boolean' },
   },
 };
 
@@ -27,52 +27,52 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "확인",
-    variant: "primary",
+    children: '확인',
+    variant: 'primary',
     disabled: false,
   },
 };
 
 export const Secondary: Story = {
   args: {
-    children: "취소",
-    variant: "secondary",
+    children: '취소',
+    variant: 'secondary',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: "비활성",
+    children: '비활성',
     disabled: true,
   },
 };
 
 export const Small: Story = {
   args: {
-    children: "작은 버튼",
-    size: "sm",
+    children: '작은 버튼',
+    size: 'sm',
   },
 };
 
 export const Large: Story = {
   args: {
-    children: "큰 버튼",
-    size: "lg",
+    children: '큰 버튼',
+    size: 'lg',
   },
 };
 
 export const WithIcon: Story = {
   args: {
-    children: "검색",
+    children: '검색',
     icon: <Search size={16} />,
-    iconPosition: "left",
+    iconPosition: 'left',
   },
 };
 
 export const Loading: Story = {
   args: {
-    children: "로딩 중...",
+    children: '로딩 중...',
     isLoading: true,
   },
 };
