@@ -1,8 +1,8 @@
 /* body, html, reset, 변수 등 전역 요소 */
-@import "@/styles/variables";
-@import "@/styles/mixins";
-@import "@/styles/media";
-@import "@/styles/base";
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./media" as *;
+@use "./base" as *;
 
 * {
   box-sizing: border-box;

@@ -1,41 +1,35 @@
-// src/features/chart/components/PriceChart.tsx
-
 "use client";
+// src/features/chart/components/PriceChart.tsx
+import { useEffect, useRef } from "react";
+import styles from "@/features/chart/styles/Chart.module.scss";
+import {
+  useD3PriceChart,
+  usePriceHistory,
+  PriceChartSkeleton,
+} from "@/features/chart";
 
-import { ResponsiveLine } from "@nivo/line";
-import { PriceChartProp, usePriceHistory } from "@/features/chart";
+export const PriceChart = ({ productId }: { productId: string }) => {
+  const svgRef = useRef<SVGSVGElement>(null);
 
-const PriceChart = ({ productId }: PriceChartProp) => {
-  const { data, isLoading, isError } = usePriceHistory(productId);
+  const { data, isLoading, isError } = usePriceHistory({ productId });
 
-  if (isLoading) return <div>차트 로딩 중...</div>;
-  if (isError || !data) return <div>차트를 불러올 수 없습니다.</div>;
+  const isReady = productId && data;
+  if (isReady) useD3PriceChart(svgRef, data);
 
-  const chartData = [
-    {
-      id: "가격",
-      data: data.map((d) => ({ x: d.date, y: d.price })),
-    },
-  ];
+  if (!productId)
+    return <div className={styles.status}>상품 ID가 필요합니다.</div>;
+  if (isLoading) return <PriceChartSkeleton />;
+  if (isError || !data)
+    return <div className={styles.status}>차트를 불러올 수 없습니다.</div>;
 
   return (
-    <div style={{ height: 300 }}>
-      <ResponsiveLine
-        data={chartData}
-        margin={{ top: 20, right: 30, bottom: 50, left: 60 }}
-        xScale={{ type: "point" }}
-        yScale={{ type: "linear", stacked: false }}
-        axisBottom={{
-          tickRotation: -45,
-        }}
-        axisLeft={{
-          legend: "가격",
-          legendOffset: -40,
-        }}
-        colors={{ scheme: "nivo" }}
-        pointSize={6}
-        useMesh
-      />
+    <div className={`${styles.container}`}>
+      <svg ref={svgRef}></svg>
+      <div
+        id="tooltip"
+        className={styles.tooltip}
+        style={{ display: "none" }}
+      ></div>
     </div>
   );
 };

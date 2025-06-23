@@ -1,6 +1,6 @@
 /* src/components/ui/styles/SortFilterControls.module.scss */
-@import "@/styles/variables";
-@import "@/styles/base";
+@use "sass:color";
+@use "@/styles/variables" as *;
 
 .container {
   display: flex;
@@ -28,7 +28,7 @@
   transition: $color-background 0.2s, color 0.2s;
 
   &:hover {
-    background-color: darken($color-background, 10%);
+    background-color: color.adjust($color-primary, $lightness: -10%);
   }
 }
 

@@ -1,19 +1,16 @@
-// src/features/chart/api/chartAPI.ts
+import { PriceData, SearchParams } from "@/features/chart";
 
-type PricePoint = {
-  date: string; // ISO format
-  price: number;
-};
+export const getPriceHistory = async ({
+  productId,
+  sort = "all",
+  filter = "all",
+}: SearchParams): Promise<PriceData[]> => {
+  const params = new URLSearchParams();
+  if (productId) params.append("productId", productId);
 
-export const getPriceHistory = async (
-  productId: string
-): Promise<PricePoint[]> => {
-  // 임시 가상 데이터
-  return [
-    { date: "2024-06-01", price: 10000 },
-    { date: "2024-06-02", price: 9800 },
-    { date: "2024-06-03", price: 9700 },
-    { date: "2024-06-04", price: 9900 },
-    { date: "2024-06-05", price: 9500 },
-  ];
+  const res = await fetch(`/api/chart?${params.toString()}`);
+  if (!res.ok) throw new Error("가격 데이터를 불러오지 못했습니다.");
+
+  const data: PriceData[] = await res.json();
+  return data;
 };

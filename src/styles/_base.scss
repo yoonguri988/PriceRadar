@@ -1,5 +1,5 @@
 /* reset, 기본 요소 스타일 */
-@import "@/styles/variables";
+@use "./variables" as *;
 
 /* 크기별 스타일: size-md 기준*/
 button.size-sm {

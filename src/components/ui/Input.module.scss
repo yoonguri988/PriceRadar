@@ -1,7 +1,5 @@
 /* src/components/ui/Input.module.scss */
-@import "@/styles/variables";
-@import "@/styles/base";
-
+@use "@/styles/variables" as *;
 /* 공통 스타일 */
 .icon-wrapper {
   display: flex;

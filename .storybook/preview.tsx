@@ -1,31 +1,34 @@
-import type { Preview } from "@storybook/nextjs-vite";
+import React from "react"; // JSX 쓰는 경우 필요
+import type { Preview } from "@storybook/react";
 import { initialize, mswLoader } from "msw-storybook-addon";
-import "@/styles/global.scss"; // 글로벌 스타일 적용
+import "@/styles/global.scss"; // 전역 SCSS 적용
 
-initialize(); // 초기화
-
-export const loaders = [mswLoader];
+initialize();
 
 const preview: Preview = {
-  decorators: [(Story) => <Story />],
   parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i,
+        date: /Date$/,
       },
     },
     viewport: {
       defaultViewport: "responsive",
     },
-
     a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: "todo",
+      disable: false, // 접근성 검사 수행
+    },
+    backgrounds: {
+      default: "light",
+      values: [
+        { name: "light", value: "#ffffff" },
+        { name: "dark", value: "#1e1e1e" },
+      ],
     },
   },
+  loaders: [mswLoader],
+  decorators: [(Story) => <Story />],
 };
-
 export default preview;
