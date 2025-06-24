@@ -3,8 +3,8 @@
  * @description 한 줄 설명 및 슬로건
  */
 import { HomeIntro } from './HomeIntro';
-import { PopularProducts } from '@/features/product/components/PopularProducts';
 import { DemoPriceTrend } from '@/features/chart/components/DemoPriceTrend';
+import { PopularProducts } from '@/features/product/components/PopularProducts';
 
 export default function HomePageView() {
   return (

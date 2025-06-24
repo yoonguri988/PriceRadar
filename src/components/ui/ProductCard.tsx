@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ProductCardProps } from '@/types/product.type';
 import * as styles from './ProductCard.styles';
-import { ArrowRightIcon, Heart, Star } from 'lucide-react';
+import { ChevronRight, Heart, Star } from 'lucide-react';
 
 export const ProductCard = ({ sect, product, onClick }: ProductCardProps) => {
   const {
@@ -23,13 +23,13 @@ export const ProductCard = ({ sect, product, onClick }: ProductCardProps) => {
 
   return (
     <div className={`${styles.container} relative`}>
-      {isSoldOut && <div className={styles.soldOutOverlay}>품절</div>}
+      {/* {isSoldOut && <div className={styles.soldOutOverlay}>품절</div>} */}
       <div className={styles.imageContent}>
         <Image
           src={imageUrl}
           alt={name}
-          width={160}
-          height={160}
+          width={210}
+          height={210}
           className="rounded object-cover bg-home-cardBg"
         />
         <span className="relative">
@@ -39,10 +39,23 @@ export const ProductCard = ({ sect, product, onClick }: ProductCardProps) => {
         </span>
       </div>
       {!popSectYn && (
+        <div className={styles.badgeList}>
+          {badges.map((badge, i) => (
+            <span
+              key={i}
+              className={styles.badgeItem}
+              style={{ backgroundColor: badge.color }}
+            >
+              {badge.text}
+            </span>
+          ))}
+        </div>
+      )}
+      {!popSectYn && (
         <div className={styles.sellerContent}>
           <span>{seller}</span>
           <span className="pt-0.5">
-            <ArrowRightIcon className="w-2 h-3 text-gray-500" />
+            <ChevronRight size={12} className="text-gray-500" />
           </span>
         </div>
       )}
@@ -70,19 +83,6 @@ export const ProductCard = ({ sect, product, onClick }: ProductCardProps) => {
         </div>
         <div className={styles.review}>리뷰 {reviewCount}</div>
       </div>
-      {!popSectYn && (
-        <div className={styles.badgeList}>
-          {badges.map((badge, i) => (
-            <span
-              key={i}
-              className={styles.badgeItem}
-              style={{ backgroundColor: badge.color }}
-            >
-              {badge.text}
-            </span>
-          ))}
-        </div>
-      )}
     </div>
   );
 };
