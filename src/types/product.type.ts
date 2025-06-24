@@ -18,18 +18,27 @@ export type SearchParams = {
 };
 
 //서버 응답
+export interface ProductBadge {
+  text: string;
+  color: string;
+}
+
 export interface Product {
   id: string;
+  category: string;
   name: string;
   price: number;
-  originalPrice?: number;
+  originalPrice: number;
   imageUrl: string;
-  seller?: string;
-  reviewCount?: number;
-  shippingInfo?: string;
-  isSoldOut?: boolean;
-  badges?: { text: string; color?: string }[];
-  isFavorite?: boolean;
+  seller: string;
+  reviewCount: number;
+  shippingInfo: string;
+  isSoldOut: boolean;
+  rating: number;
+  createdAt: string;
+  updatedAt: string;
+  badges: ProductBadge[];
+  liked: boolean;
 }
 
 export interface GetProductListResponse {
@@ -39,16 +48,9 @@ export interface GetProductListResponse {
 
 // UI 컴포넌트
 export interface ProductCardProps {
-  name: string;
-  price: number;
-  imageUrl: string;
-  seller?: string;
-  reviewCount?: number;
-  shippingInfo?: string;
-  isSoldOut?: boolean; // 품절 상태
-  originalPrice?: number; // 할인 가격 표시
-  badges?: { text: string; color?: string }[]; // ex) "최저가", "베스트"
-  isFavorite?: boolean;
+  sect: String;
+  product: Product;
+
   onClick?: () => void;
   onFavoriteToggle?: () => void;
 }
@@ -59,18 +61,18 @@ export interface ProductCardProps {
  *
  */
 export type SortOption =
-  | "all"
-  | "priceAsc"
-  | "priceDesc"
-  | "reviewDesc"
-  | "latest";
+  | 'all'
+  | 'priceAsc'
+  | 'priceDesc'
+  | 'reviewDesc'
+  | 'latest';
 export type FilterOption =
-  | "all"
-  | "electronics"
-  | "fashion"
-  | "beauty"
-  | "sports"
-  | "books";
+  | 'all'
+  | 'electronics'
+  | 'fashion'
+  | 'beauty'
+  | 'sports'
+  | 'books';
 
 export type ProductSortStoreProps = {
   sort: SortOption;
