@@ -30,3 +30,8 @@ export interface InputProps
   icon?: ReactNode;
   helperText?: string;
 }
+
+export interface NavLinkProps {
+  href: string;
+  label: string;
+}
