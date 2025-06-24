@@ -3,7 +3,6 @@ import type {
   InputHTMLAttributes,
   ReactNode,
 } from 'react';
-import { FilterOption, SortOption } from '@/features/product';
 
 export type EmptyStateProp = {
   icon?: ReactNode;
@@ -30,16 +29,4 @@ export interface InputProps
   label?: string;
   icon?: ReactNode;
   helperText?: string;
-}
-
-export type SortFilterControlsProps = {
-  sort: SortOption;
-  setSort: (sort: SortOption) => void;
-  filter: FilterOption;
-  setFilter: (filter: FilterOption) => void;
-};
-
-export interface NavLinkProps {
-  href: string;
-  label: string;
 }
