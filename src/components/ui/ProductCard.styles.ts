@@ -1,5 +1,5 @@
 export const container =
-  'flex flex-col gap-1 border rounded-xl p-2 shadow-sm bg-white hover:shadow-md transition-all'; // space-y-2
+  'flex flex-col gap-1 border rounded-xl p-2 bg-white hover:cursor-pointer transition-all'; // space-y-2
 
 export const imageContent = 'w-full flex justify-center';
 export const favoriteIcon = 'absolute bottom-2 right-2 w-4 h-4 text-[#FF3D25]';
@@ -16,7 +16,7 @@ export const priceOriginContent = 'flex items-center gap-1';
 
 export const sellerContent = 'flex gap-1 text-xs font-bold text-foreground ';
 
-export const badgeList = 'flex flex-wrap gap-1';
+export const badgeList = 'flex flex-wrap gap-1 my-1';
 
 export const badgeItem =
   'text-white text-xs px-2 py-0.5 rounded-full font-semibold shadow-sm';
