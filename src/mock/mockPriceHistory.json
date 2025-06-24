@@ -1,22 +1,4802 @@
 [
-  { "productId": "product_1", "date": "2024-06-01", "price": 12000 },
-  { "productId": "product_1", "date": "2024-06-02", "price": 11800 },
-  { "productId": "product_1", "date": "2024-06-03", "price": 11500 },
-  { "productId": "product_2", "date": "2024-06-01", "price": 22000 },
-  { "productId": "product_2", "date": "2024-06-03", "price": 22500 },
-  { "productId": "product_2", "date": "2024-06-05", "price": 21900 },
-  { "productId": "product_3", "date": "2024-06-02", "price": 8700 },
-  { "productId": "product_3", "date": "2024-06-03", "price": 8800 },
-  { "productId": "product_3", "date": "2024-06-04", "price": 9000 },
-  { "productId": "product_4", "date": "2024-06-01", "price": 14500 },
-  { "productId": "product_4", "date": "2024-06-02", "price": 14300 },
-  { "productId": "product_4", "date": "2024-06-03", "price": 14000 },
-  { "productId": "product_4", "date": "2024-06-04", "price": 13800 },
-  { "productId": "product_5", "date": "2024-06-02", "price": 31000 },
-  { "productId": "product_5", "date": "2024-06-03", "price": 30500 },
-  { "productId": "product_5", "date": "2024-06-04", "price": 29900 },
-  { "productId": "product_5", "date": "2024-06-05", "price": 29000 },
-  { "productId": "product_3", "date": "2024-06-05", "price": 9100 },
-  { "productId": "product_2", "date": "2024-06-06", "price": 21500 },
-  { "productId": "product_1", "date": "2024-06-04", "price": 11300 }
+  {
+    "productId": "product_1",
+    "date": "2025-06-01",
+    "price": 322068
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-02",
+    "price": 316228
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-03",
+    "price": 312386
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-04",
+    "price": 322026
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-05",
+    "price": 327473
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-06",
+    "price": 330986
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-07",
+    "price": 331759
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-08",
+    "price": 329055
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-09",
+    "price": 333008
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-10",
+    "price": 328333
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-11",
+    "price": 337310
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-12",
+    "price": 347244
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-13",
+    "price": 346503
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-14",
+    "price": 355076
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-15",
+    "price": 353053
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-16",
+    "price": 360942
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-17",
+    "price": 358280
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-18",
+    "price": 348348
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-19",
+    "price": 345856
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-20",
+    "price": 354661
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-21",
+    "price": 354937
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-22",
+    "price": 360671
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-23",
+    "price": 358541
+  },
+  {
+    "productId": "product_1",
+    "date": "2025-06-24",
+    "price": 367669
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-01",
+    "price": 1630238
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-02",
+    "price": 1628216
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-03",
+    "price": 1634299
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-04",
+    "price": 1638289
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-05",
+    "price": 1637133
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-06",
+    "price": 1633153
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-07",
+    "price": 1627987
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-08",
+    "price": 1621534
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-09",
+    "price": 1622570
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-10",
+    "price": 1614425
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-11",
+    "price": 1615379
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-12",
+    "price": 1615670
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-13",
+    "price": 1614581
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-14",
+    "price": 1609661
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-15",
+    "price": 1615338
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-16",
+    "price": 1617963
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-17",
+    "price": 1627080
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-18",
+    "price": 1620640
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-19",
+    "price": 1621295
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-20",
+    "price": 1628622
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-21",
+    "price": 1620532
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-22",
+    "price": 1625072
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-23",
+    "price": 1622866
+  },
+  {
+    "productId": "product_2",
+    "date": "2025-06-24",
+    "price": 1623647
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-01",
+    "price": 1786544
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-02",
+    "price": 1795864
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-03",
+    "price": 1803690
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-04",
+    "price": 1799079
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-05",
+    "price": 1800957
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-06",
+    "price": 1804930
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-07",
+    "price": 1803246
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-08",
+    "price": 1808927
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-09",
+    "price": 1815417
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-10",
+    "price": 1818251
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-11",
+    "price": 1823615
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-12",
+    "price": 1824215
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-13",
+    "price": 1817745
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-14",
+    "price": 1822660
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-15",
+    "price": 1818541
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-16",
+    "price": 1824018
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-17",
+    "price": 1815607
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-18",
+    "price": 1821438
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-19",
+    "price": 1825804
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-20",
+    "price": 1829985
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-21",
+    "price": 1829822
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-22",
+    "price": 1827545
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-23",
+    "price": 1830920
+  },
+  {
+    "productId": "product_3",
+    "date": "2025-06-24",
+    "price": 1837085
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-01",
+    "price": 1842854
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-02",
+    "price": 1834792
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-03",
+    "price": 1833444
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-04",
+    "price": 1841906
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-05",
+    "price": 1851391
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-06",
+    "price": 1853521
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-07",
+    "price": 1850478
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-08",
+    "price": 1853822
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-09",
+    "price": 1859681
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-10",
+    "price": 1862076
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-11",
+    "price": 1871987
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-12",
+    "price": 1869450
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-13",
+    "price": 1863735
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-14",
+    "price": 1867835
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-15",
+    "price": 1874586
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-16",
+    "price": 1880545
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-17",
+    "price": 1883500
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-18",
+    "price": 1876016
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-19",
+    "price": 1874910
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-20",
+    "price": 1876816
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-21",
+    "price": 1875907
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-22",
+    "price": 1878364
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-23",
+    "price": 1869369
+  },
+  {
+    "productId": "product_4",
+    "date": "2025-06-24",
+    "price": 1871742
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-01",
+    "price": 1873727
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-02",
+    "price": 1881790
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-03",
+    "price": 1884612
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-04",
+    "price": 1893187
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-05",
+    "price": 1891349
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-06",
+    "price": 1901176
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-07",
+    "price": 1907915
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-08",
+    "price": 1911313
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-09",
+    "price": 1907223
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-10",
+    "price": 1915372
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-11",
+    "price": 1913142
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-12",
+    "price": 1921986
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-13",
+    "price": 1923436
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-14",
+    "price": 1920029
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-15",
+    "price": 1918900
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-16",
+    "price": 1916781
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-17",
+    "price": 1917632
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-18",
+    "price": 1909529
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-19",
+    "price": 1904441
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-20",
+    "price": 1900316
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-21",
+    "price": 1890990
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-22",
+    "price": 1899395
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-23",
+    "price": 1896875
+  },
+  {
+    "productId": "product_5",
+    "date": "2025-06-24",
+    "price": 1894343
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-01",
+    "price": 1254887
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-02",
+    "price": 1261083
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-03",
+    "price": 1251483
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-04",
+    "price": 1246691
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-05",
+    "price": 1247199
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-06",
+    "price": 1245269
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-07",
+    "price": 1249246
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-08",
+    "price": 1243919
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-09",
+    "price": 1237937
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-10",
+    "price": 1228931
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-11",
+    "price": 1219767
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-12",
+    "price": 1221028
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-13",
+    "price": 1225472
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-14",
+    "price": 1222019
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-15",
+    "price": 1224372
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-16",
+    "price": 1231951
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-17",
+    "price": 1238779
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-18",
+    "price": 1229386
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-19",
+    "price": 1231757
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-20",
+    "price": 1222408
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-21",
+    "price": 1222768
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-22",
+    "price": 1213821
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-23",
+    "price": 1204478
+  },
+  {
+    "productId": "product_6",
+    "date": "2025-06-24",
+    "price": 1201222
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-01",
+    "price": 586275
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-02",
+    "price": 577255
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-03",
+    "price": 579633
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-04",
+    "price": 570619
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-05",
+    "price": 568711
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-06",
+    "price": 562317
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-07",
+    "price": 554388
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-08",
+    "price": 553864
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-09",
+    "price": 545474
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-10",
+    "price": 552403
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-11",
+    "price": 559872
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-12",
+    "price": 559650
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-13",
+    "price": 552622
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-14",
+    "price": 553835
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-15",
+    "price": 559056
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-16",
+    "price": 562100
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-17",
+    "price": 569239
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-18",
+    "price": 574152
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-19",
+    "price": 580292
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-20",
+    "price": 576823
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-21",
+    "price": 568954
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-22",
+    "price": 578070
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-23",
+    "price": 577646
+  },
+  {
+    "productId": "product_7",
+    "date": "2025-06-24",
+    "price": 569706
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-01",
+    "price": 1710862
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-02",
+    "price": 1711448
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-03",
+    "price": 1712922
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-04",
+    "price": 1716281
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-05",
+    "price": 1720588
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-06",
+    "price": 1725224
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-07",
+    "price": 1720467
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-08",
+    "price": 1720343
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-09",
+    "price": 1726806
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-10",
+    "price": 1720052
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-11",
+    "price": 1725002
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-12",
+    "price": 1715768
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-13",
+    "price": 1723366
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-14",
+    "price": 1715288
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-15",
+    "price": 1724961
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-16",
+    "price": 1722683
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-17",
+    "price": 1726671
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-18",
+    "price": 1733356
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-19",
+    "price": 1742329
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-20",
+    "price": 1745693
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-21",
+    "price": 1754966
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-22",
+    "price": 1762813
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-23",
+    "price": 1756927
+  },
+  {
+    "productId": "product_8",
+    "date": "2025-06-24",
+    "price": 1766762
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-01",
+    "price": 1777252
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-02",
+    "price": 1784793
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-03",
+    "price": 1779547
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-04",
+    "price": 1779590
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-05",
+    "price": 1784064
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-06",
+    "price": 1788176
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-07",
+    "price": 1784628
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-08",
+    "price": 1788379
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-09",
+    "price": 1784513
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-10",
+    "price": 1776674
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-11",
+    "price": 1783493
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-12",
+    "price": 1790668
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-13",
+    "price": 1790900
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-14",
+    "price": 1790491
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-15",
+    "price": 1786569
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-16",
+    "price": 1795001
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-17",
+    "price": 1800678
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-18",
+    "price": 1801008
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-19",
+    "price": 1809956
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-20",
+    "price": 1806263
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-21",
+    "price": 1806069
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-22",
+    "price": 1815009
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-23",
+    "price": 1816512
+  },
+  {
+    "productId": "product_9",
+    "date": "2025-06-24",
+    "price": 1808722
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-01",
+    "price": 1964545
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-02",
+    "price": 1966742
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-03",
+    "price": 1959203
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-04",
+    "price": 1952739
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-05",
+    "price": 1950995
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-06",
+    "price": 1955833
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-07",
+    "price": 1961631
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-08",
+    "price": 1965043
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-09",
+    "price": 1960690
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-10",
+    "price": 1955367
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-11",
+    "price": 1950096
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-12",
+    "price": 1952437
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-13",
+    "price": 1950950
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-14",
+    "price": 1941635
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-15",
+    "price": 1939792
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-16",
+    "price": 1933362
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-17",
+    "price": 1931440
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-18",
+    "price": 1926122
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-19",
+    "price": 1921488
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-20",
+    "price": 1913571
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-21",
+    "price": 1917931
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-22",
+    "price": 1921328
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-23",
+    "price": 1923619
+  },
+  {
+    "productId": "product_10",
+    "date": "2025-06-24",
+    "price": 1927364
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-01",
+    "price": 479050
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-02",
+    "price": 482445
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-03",
+    "price": 487394
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-04",
+    "price": 493131
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-05",
+    "price": 485848
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-06",
+    "price": 482859
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-07",
+    "price": 489299
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-08",
+    "price": 490896
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-09",
+    "price": 499020
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-10",
+    "price": 505295
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-11",
+    "price": 500605
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-12",
+    "price": 496328
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-13",
+    "price": 486540
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-14",
+    "price": 495437
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-15",
+    "price": 504050
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-16",
+    "price": 513426
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-17",
+    "price": 514870
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-18",
+    "price": 520103
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-19",
+    "price": 529325
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-20",
+    "price": 519559
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-21",
+    "price": 518777
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-22",
+    "price": 509683
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-23",
+    "price": 505853
+  },
+  {
+    "productId": "product_11",
+    "date": "2025-06-24",
+    "price": 510199
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-01",
+    "price": 341285
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-02",
+    "price": 350856
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-03",
+    "price": 351960
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-04",
+    "price": 346400
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-05",
+    "price": 343412
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-06",
+    "price": 349609
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-07",
+    "price": 351412
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-08",
+    "price": 349810
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-09",
+    "price": 354252
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-10",
+    "price": 359471
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-11",
+    "price": 358324
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-12",
+    "price": 360742
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-13",
+    "price": 358094
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-14",
+    "price": 362269
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-15",
+    "price": 367237
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-16",
+    "price": 358503
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-17",
+    "price": 350236
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-18",
+    "price": 343270
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-19",
+    "price": 342515
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-20",
+    "price": 338365
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-21",
+    "price": 340511
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-22",
+    "price": 344644
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-23",
+    "price": 346108
+  },
+  {
+    "productId": "product_12",
+    "date": "2025-06-24",
+    "price": 348050
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-01",
+    "price": 1666935
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-02",
+    "price": 1665784
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-03",
+    "price": 1667171
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-04",
+    "price": 1667660
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-05",
+    "price": 1677244
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-06",
+    "price": 1668503
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-07",
+    "price": 1672405
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-08",
+    "price": 1666051
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-09",
+    "price": 1669604
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-10",
+    "price": 1678979
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-11",
+    "price": 1683014
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-12",
+    "price": 1684476
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-13",
+    "price": 1683925
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-14",
+    "price": 1680066
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-15",
+    "price": 1682997
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-16",
+    "price": 1686342
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-17",
+    "price": 1685611
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-18",
+    "price": 1681702
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-19",
+    "price": 1674219
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-20",
+    "price": 1666419
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-21",
+    "price": 1660858
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-22",
+    "price": 1663350
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-23",
+    "price": 1664051
+  },
+  {
+    "productId": "product_13",
+    "date": "2025-06-24",
+    "price": 1665407
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-01",
+    "price": 597798
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-02",
+    "price": 593648
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-03",
+    "price": 590372
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-04",
+    "price": 597510
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-05",
+    "price": 605311
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-06",
+    "price": 612873
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-07",
+    "price": 613618
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-08",
+    "price": 620305
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-09",
+    "price": 623566
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-10",
+    "price": 622731
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-11",
+    "price": 618042
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-12",
+    "price": 620002
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-13",
+    "price": 618033
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-14",
+    "price": 625781
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-15",
+    "price": 633353
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-16",
+    "price": 631528
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-17",
+    "price": 641223
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-18",
+    "price": 639420
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-19",
+    "price": 635703
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-20",
+    "price": 625860
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-21",
+    "price": 633688
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-22",
+    "price": 637327
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-23",
+    "price": 637677
+  },
+  {
+    "productId": "product_14",
+    "date": "2025-06-24",
+    "price": 640236
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-01",
+    "price": 650359
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-02",
+    "price": 642125
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-03",
+    "price": 634380
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-04",
+    "price": 628664
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-05",
+    "price": 636174
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-06",
+    "price": 634927
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-07",
+    "price": 630030
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-08",
+    "price": 626499
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-09",
+    "price": 628714
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-10",
+    "price": 625788
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-11",
+    "price": 632353
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-12",
+    "price": 633714
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-13",
+    "price": 638950
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-14",
+    "price": 645888
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-15",
+    "price": 641198
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-16",
+    "price": 644202
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-17",
+    "price": 639418
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-18",
+    "price": 643975
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-19",
+    "price": 637201
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-20",
+    "price": 636610
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-21",
+    "price": 634715
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-22",
+    "price": 625338
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-23",
+    "price": 629884
+  },
+  {
+    "productId": "product_15",
+    "date": "2025-06-24",
+    "price": 620751
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-01",
+    "price": 1974221
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-02",
+    "price": 1968679
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-03",
+    "price": 1973433
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-04",
+    "price": 1966296
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-05",
+    "price": 1968699
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-06",
+    "price": 1960082
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-07",
+    "price": 1955546
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-08",
+    "price": 1958233
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-09",
+    "price": 1962365
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-10",
+    "price": 1970742
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-11",
+    "price": 1967811
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-12",
+    "price": 1974464
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-13",
+    "price": 1971944
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-14",
+    "price": 1965545
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-15",
+    "price": 1973926
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-16",
+    "price": 1976617
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-17",
+    "price": 1967098
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-18",
+    "price": 1974173
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-19",
+    "price": 1968136
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-20",
+    "price": 1964769
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-21",
+    "price": 1963973
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-22",
+    "price": 1971462
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-23",
+    "price": 1972459
+  },
+  {
+    "productId": "product_16",
+    "date": "2025-06-24",
+    "price": 1975707
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-01",
+    "price": 405342
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-02",
+    "price": 404150
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-03",
+    "price": 400995
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-04",
+    "price": 404150
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-05",
+    "price": 402402
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-06",
+    "price": 410864
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-07",
+    "price": 414251
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-08",
+    "price": 421679
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-09",
+    "price": 426164
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-10",
+    "price": 420549
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-11",
+    "price": 419875
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-12",
+    "price": 418083
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-13",
+    "price": 416644
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-14",
+    "price": 416825
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-15",
+    "price": 412594
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-16",
+    "price": 421116
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-17",
+    "price": 420465
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-18",
+    "price": 421907
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-19",
+    "price": 420293
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-20",
+    "price": 423970
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-21",
+    "price": 418922
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-22",
+    "price": 419364
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-23",
+    "price": 427732
+  },
+  {
+    "productId": "product_17",
+    "date": "2025-06-24",
+    "price": 428389
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-01",
+    "price": 903426
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-02",
+    "price": 909303
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-03",
+    "price": 904946
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-04",
+    "price": 901565
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-05",
+    "price": 902781
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-06",
+    "price": 894415
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-07",
+    "price": 893426
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-08",
+    "price": 897857
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-09",
+    "price": 896028
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-10",
+    "price": 888640
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-11",
+    "price": 893639
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-12",
+    "price": 900319
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-13",
+    "price": 905764
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-14",
+    "price": 909937
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-15",
+    "price": 912345
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-16",
+    "price": 920392
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-17",
+    "price": 915499
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-18",
+    "price": 923618
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-19",
+    "price": 922885
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-20",
+    "price": 922939
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-21",
+    "price": 931753
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-22",
+    "price": 937216
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-23",
+    "price": 928967
+  },
+  {
+    "productId": "product_18",
+    "date": "2025-06-24",
+    "price": 938207
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-01",
+    "price": 260894
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-02",
+    "price": 270790
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-03",
+    "price": 278120
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-04",
+    "price": 277076
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-05",
+    "price": 283098
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-06",
+    "price": 286362
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-07",
+    "price": 286932
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-08",
+    "price": 279301
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-09",
+    "price": 282910
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-10",
+    "price": 280428
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-11",
+    "price": 283652
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-12",
+    "price": 290236
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-13",
+    "price": 282118
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-14",
+    "price": 277613
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-15",
+    "price": 286251
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-16",
+    "price": 289260
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-17",
+    "price": 287170
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-18",
+    "price": 291611
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-19",
+    "price": 285174
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-20",
+    "price": 291248
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-21",
+    "price": 290129
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-22",
+    "price": 284945
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-23",
+    "price": 286380
+  },
+  {
+    "productId": "product_19",
+    "date": "2025-06-24",
+    "price": 277006
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-01",
+    "price": 239877
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-02",
+    "price": 239882
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-03",
+    "price": 235739
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-04",
+    "price": 226837
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-05",
+    "price": 229526
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-06",
+    "price": 233566
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-07",
+    "price": 233876
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-08",
+    "price": 239426
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-09",
+    "price": 247026
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-10",
+    "price": 250527
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-11",
+    "price": 260117
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-12",
+    "price": 263476
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-13",
+    "price": 260069
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-14",
+    "price": 261858
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-15",
+    "price": 262058
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-16",
+    "price": 261556
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-17",
+    "price": 265414
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-18",
+    "price": 271076
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-19",
+    "price": 279368
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-20",
+    "price": 286281
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-21",
+    "price": 286460
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-22",
+    "price": 295562
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-23",
+    "price": 297607
+  },
+  {
+    "productId": "product_20",
+    "date": "2025-06-24",
+    "price": 299456
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-01",
+    "price": 232213
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-02",
+    "price": 240808
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-03",
+    "price": 236406
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-04",
+    "price": 233966
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-05",
+    "price": 233477
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-06",
+    "price": 237986
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-07",
+    "price": 236067
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-08",
+    "price": 230360
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-09",
+    "price": 230930
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-10",
+    "price": 223517
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-11",
+    "price": 222003
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-12",
+    "price": 225186
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-13",
+    "price": 222195
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-14",
+    "price": 228366
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-15",
+    "price": 223502
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-16",
+    "price": 214533
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-17",
+    "price": 216514
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-18",
+    "price": 223043
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-19",
+    "price": 232647
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-20",
+    "price": 223600
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-21",
+    "price": 227865
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-22",
+    "price": 233371
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-23",
+    "price": 235316
+  },
+  {
+    "productId": "product_21",
+    "date": "2025-06-24",
+    "price": 226472
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-01",
+    "price": 1120183
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-02",
+    "price": 1114080
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-03",
+    "price": 1115953
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-04",
+    "price": 1110320
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-05",
+    "price": 1116206
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-06",
+    "price": 1120510
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-07",
+    "price": 1113516
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-08",
+    "price": 1120535
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-09",
+    "price": 1110739
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-10",
+    "price": 1113414
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-11",
+    "price": 1109222
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-12",
+    "price": 1118489
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-13",
+    "price": 1126062
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-14",
+    "price": 1118860
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-15",
+    "price": 1116404
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-16",
+    "price": 1111637
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-17",
+    "price": 1116934
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-18",
+    "price": 1110142
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-19",
+    "price": 1107901
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-20",
+    "price": 1107099
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-21",
+    "price": 1100840
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-22",
+    "price": 1107787
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-23",
+    "price": 1098427
+  },
+  {
+    "productId": "product_22",
+    "date": "2025-06-24",
+    "price": 1095351
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-01",
+    "price": 1916329
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-02",
+    "price": 1913365
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-03",
+    "price": 1912662
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-04",
+    "price": 1912359
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-05",
+    "price": 1902521
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-06",
+    "price": 1904718
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-07",
+    "price": 1909393
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-08",
+    "price": 1901836
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-09",
+    "price": 1908902
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-10",
+    "price": 1904767
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-11",
+    "price": 1906641
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-12",
+    "price": 1897260
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-13",
+    "price": 1903764
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-14",
+    "price": 1908685
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-15",
+    "price": 1902238
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-16",
+    "price": 1899329
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-17",
+    "price": 1899885
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-18",
+    "price": 1894519
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-19",
+    "price": 1895251
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-20",
+    "price": 1893005
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-21",
+    "price": 1890890
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-22",
+    "price": 1900066
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-23",
+    "price": 1896062
+  },
+  {
+    "productId": "product_23",
+    "date": "2025-06-24",
+    "price": 1890078
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-01",
+    "price": 1323478
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-02",
+    "price": 1321187
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-03",
+    "price": 1319951
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-04",
+    "price": 1311707
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-05",
+    "price": 1309465
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-06",
+    "price": 1308298
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-07",
+    "price": 1307355
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-08",
+    "price": 1305644
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-09",
+    "price": 1309078
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-10",
+    "price": 1301272
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-11",
+    "price": 1302939
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-12",
+    "price": 1296816
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-13",
+    "price": 1288818
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-14",
+    "price": 1282280
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-15",
+    "price": 1282403
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-16",
+    "price": 1280140
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-17",
+    "price": 1276419
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-18",
+    "price": 1284921
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-19",
+    "price": 1291482
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-20",
+    "price": 1295013
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-21",
+    "price": 1298075
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-22",
+    "price": 1291880
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-23",
+    "price": 1284978
+  },
+  {
+    "productId": "product_24",
+    "date": "2025-06-24",
+    "price": 1284954
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-01",
+    "price": 1445748
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-02",
+    "price": 1453915
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-03",
+    "price": 1449016
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-04",
+    "price": 1439682
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-05",
+    "price": 1437963
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-06",
+    "price": 1440254
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-07",
+    "price": 1441884
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-08",
+    "price": 1437006
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-09",
+    "price": 1440573
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-10",
+    "price": 1449242
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-11",
+    "price": 1448625
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-12",
+    "price": 1442697
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-13",
+    "price": 1447677
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-14",
+    "price": 1445038
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-15",
+    "price": 1441276
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-16",
+    "price": 1434461
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-17",
+    "price": 1429159
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-18",
+    "price": 1426576
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-19",
+    "price": 1424951
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-20",
+    "price": 1419598
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-21",
+    "price": 1414986
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-22",
+    "price": 1416269
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-23",
+    "price": 1414818
+  },
+  {
+    "productId": "product_25",
+    "date": "2025-06-24",
+    "price": 1419003
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-01",
+    "price": 1810232
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-02",
+    "price": 1807074
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-03",
+    "price": 1810820
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-04",
+    "price": 1816367
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-05",
+    "price": 1810154
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-06",
+    "price": 1803299
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-07",
+    "price": 1801484
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-08",
+    "price": 1799719
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-09",
+    "price": 1796784
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-10",
+    "price": 1806646
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-11",
+    "price": 1815513
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-12",
+    "price": 1810340
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-13",
+    "price": 1809510
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-14",
+    "price": 1811452
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-15",
+    "price": 1807962
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-16",
+    "price": 1808186
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-17",
+    "price": 1814141
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-18",
+    "price": 1806257
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-19",
+    "price": 1801826
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-20",
+    "price": 1795443
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-21",
+    "price": 1787995
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-22",
+    "price": 1782100
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-23",
+    "price": 1778997
+  },
+  {
+    "productId": "product_26",
+    "date": "2025-06-24",
+    "price": 1769252
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-01",
+    "price": 1821005
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-02",
+    "price": 1823987
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-03",
+    "price": 1821405
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-04",
+    "price": 1824934
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-05",
+    "price": 1831743
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-06",
+    "price": 1833303
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-07",
+    "price": 1832415
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-08",
+    "price": 1830420
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-09",
+    "price": 1826260
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-10",
+    "price": 1821564
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-11",
+    "price": 1826960
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-12",
+    "price": 1822746
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-13",
+    "price": 1825987
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-14",
+    "price": 1835877
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-15",
+    "price": 1840128
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-16",
+    "price": 1846556
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-17",
+    "price": 1836665
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-18",
+    "price": 1831537
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-19",
+    "price": 1825353
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-20",
+    "price": 1820102
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-21",
+    "price": 1824761
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-22",
+    "price": 1827193
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-23",
+    "price": 1830056
+  },
+  {
+    "productId": "product_27",
+    "date": "2025-06-24",
+    "price": 1832950
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-01",
+    "price": 157511
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-02",
+    "price": 154844
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-03",
+    "price": 160711
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-04",
+    "price": 163758
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-05",
+    "price": 160458
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-06",
+    "price": 167234
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-07",
+    "price": 168176
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-08",
+    "price": 159633
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-09",
+    "price": 154792
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-10",
+    "price": 153173
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-11",
+    "price": 144108
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-12",
+    "price": 147427
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-13",
+    "price": 149834
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-14",
+    "price": 149471
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-15",
+    "price": 140843
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-16",
+    "price": 149578
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-17",
+    "price": 143774
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-18",
+    "price": 139488
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-19",
+    "price": 135630
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-20",
+    "price": 137152
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-21",
+    "price": 133497
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-22",
+    "price": 137227
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-23",
+    "price": 127443
+  },
+  {
+    "productId": "product_28",
+    "date": "2025-06-24",
+    "price": 120534
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-01",
+    "price": 963664
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-02",
+    "price": 969438
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-03",
+    "price": 974157
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-04",
+    "price": 966794
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-05",
+    "price": 961584
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-06",
+    "price": 966322
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-07",
+    "price": 968408
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-08",
+    "price": 960715
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-09",
+    "price": 961218
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-10",
+    "price": 956003
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-11",
+    "price": 963914
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-12",
+    "price": 962115
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-13",
+    "price": 970894
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-14",
+    "price": 973617
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-15",
+    "price": 974689
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-16",
+    "price": 974272
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-17",
+    "price": 966464
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-18",
+    "price": 959638
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-19",
+    "price": 968258
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-20",
+    "price": 970677
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-21",
+    "price": 966179
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-22",
+    "price": 957131
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-23",
+    "price": 955859
+  },
+  {
+    "productId": "product_29",
+    "date": "2025-06-24",
+    "price": 963268
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-01",
+    "price": 525916
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-02",
+    "price": 517043
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-03",
+    "price": 517531
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-04",
+    "price": 512810
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-05",
+    "price": 517733
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-06",
+    "price": 510748
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-07",
+    "price": 506665
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-08",
+    "price": 515158
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-09",
+    "price": 519670
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-10",
+    "price": 519637
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-11",
+    "price": 516995
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-12",
+    "price": 521873
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-13",
+    "price": 518445
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-14",
+    "price": 520035
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-15",
+    "price": 522648
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-16",
+    "price": 525498
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-17",
+    "price": 524270
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-18",
+    "price": 531900
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-19",
+    "price": 541171
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-20",
+    "price": 538697
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-21",
+    "price": 547803
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-22",
+    "price": 538248
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-23",
+    "price": 544944
+  },
+  {
+    "productId": "product_30",
+    "date": "2025-06-24",
+    "price": 544074
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-01",
+    "price": 1655082
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-02",
+    "price": 1658903
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-03",
+    "price": 1662756
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-04",
+    "price": 1662021
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-05",
+    "price": 1670977
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-06",
+    "price": 1663968
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-07",
+    "price": 1658453
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-08",
+    "price": 1668408
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-09",
+    "price": 1660313
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-10",
+    "price": 1661211
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-11",
+    "price": 1667581
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-12",
+    "price": 1675544
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-13",
+    "price": 1682243
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-14",
+    "price": 1681337
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-15",
+    "price": 1671393
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-16",
+    "price": 1664687
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-17",
+    "price": 1663794
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-18",
+    "price": 1656998
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-19",
+    "price": 1649497
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-20",
+    "price": 1647347
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-21",
+    "price": 1645312
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-22",
+    "price": 1635639
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-23",
+    "price": 1641581
+  },
+  {
+    "productId": "product_31",
+    "date": "2025-06-24",
+    "price": 1637682
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-01",
+    "price": 294777
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-02",
+    "price": 299949
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-03",
+    "price": 309513
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-04",
+    "price": 311666
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-05",
+    "price": 304460
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-06",
+    "price": 309214
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-07",
+    "price": 312299
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-08",
+    "price": 307259
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-09",
+    "price": 313931
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-10",
+    "price": 310556
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-11",
+    "price": 303209
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-12",
+    "price": 293932
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-13",
+    "price": 302398
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-14",
+    "price": 303373
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-15",
+    "price": 293958
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-16",
+    "price": 298115
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-17",
+    "price": 296203
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-18",
+    "price": 297155
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-19",
+    "price": 305885
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-20",
+    "price": 311020
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-21",
+    "price": 318777
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-22",
+    "price": 325781
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-23",
+    "price": 316833
+  },
+  {
+    "productId": "product_32",
+    "date": "2025-06-24",
+    "price": 312042
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-01",
+    "price": 1858474
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-02",
+    "price": 1853793
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-03",
+    "price": 1857884
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-04",
+    "price": 1863383
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-05",
+    "price": 1860452
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-06",
+    "price": 1856449
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-07",
+    "price": 1851778
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-08",
+    "price": 1851572
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-09",
+    "price": 1843146
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-10",
+    "price": 1843481
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-11",
+    "price": 1842452
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-12",
+    "price": 1848807
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-13",
+    "price": 1858036
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-14",
+    "price": 1867608
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-15",
+    "price": 1872346
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-16",
+    "price": 1874794
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-17",
+    "price": 1868320
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-18",
+    "price": 1862512
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-19",
+    "price": 1871592
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-20",
+    "price": 1861760
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-21",
+    "price": 1862006
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-22",
+    "price": 1856586
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-23",
+    "price": 1856809
+  },
+  {
+    "productId": "product_33",
+    "date": "2025-06-24",
+    "price": 1866081
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-01",
+    "price": 305775
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-02",
+    "price": 300813
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-03",
+    "price": 308205
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-04",
+    "price": 316822
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-05",
+    "price": 316516
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-06",
+    "price": 319482
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-07",
+    "price": 314581
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-08",
+    "price": 319303
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-09",
+    "price": 326378
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-10",
+    "price": 318122
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-11",
+    "price": 324074
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-12",
+    "price": 326903
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-13",
+    "price": 321859
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-14",
+    "price": 320597
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-15",
+    "price": 313317
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-16",
+    "price": 311861
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-17",
+    "price": 303876
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-18",
+    "price": 305859
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-19",
+    "price": 303582
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-20",
+    "price": 297450
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-21",
+    "price": 292648
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-22",
+    "price": 295226
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-23",
+    "price": 296341
+  },
+  {
+    "productId": "product_34",
+    "date": "2025-06-24",
+    "price": 295690
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-01",
+    "price": 1586960
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-02",
+    "price": 1582778
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-03",
+    "price": 1581489
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-04",
+    "price": 1573283
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-05",
+    "price": 1566667
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-06",
+    "price": 1575231
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-07",
+    "price": 1581920
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-08",
+    "price": 1580208
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-09",
+    "price": 1576960
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-10",
+    "price": 1573358
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-11",
+    "price": 1569454
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-12",
+    "price": 1577143
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-13",
+    "price": 1581475
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-14",
+    "price": 1575922
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-15",
+    "price": 1571403
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-16",
+    "price": 1575835
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-17",
+    "price": 1581965
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-18",
+    "price": 1588946
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-19",
+    "price": 1580046
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-20",
+    "price": 1583402
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-21",
+    "price": 1580320
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-22",
+    "price": 1574687
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-23",
+    "price": 1569228
+  },
+  {
+    "productId": "product_35",
+    "date": "2025-06-24",
+    "price": 1578545
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-01",
+    "price": 1734867
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-02",
+    "price": 1739195
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-03",
+    "price": 1744471
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-04",
+    "price": 1737248
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-05",
+    "price": 1745428
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-06",
+    "price": 1746157
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-07",
+    "price": 1753074
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-08",
+    "price": 1753062
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-09",
+    "price": 1757878
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-10",
+    "price": 1758770
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-11",
+    "price": 1762117
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-12",
+    "price": 1753073
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-13",
+    "price": 1751527
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-14",
+    "price": 1744421
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-15",
+    "price": 1738020
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-16",
+    "price": 1729544
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-17",
+    "price": 1730959
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-18",
+    "price": 1727510
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-19",
+    "price": 1729680
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-20",
+    "price": 1735738
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-21",
+    "price": 1734613
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-22",
+    "price": 1736595
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-23",
+    "price": 1735920
+  },
+  {
+    "productId": "product_36",
+    "date": "2025-06-24",
+    "price": 1735020
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-01",
+    "price": 967200
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-02",
+    "price": 971497
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-03",
+    "price": 961849
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-04",
+    "price": 960836
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-05",
+    "price": 953056
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-06",
+    "price": 960749
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-07",
+    "price": 956897
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-08",
+    "price": 951807
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-09",
+    "price": 956813
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-10",
+    "price": 948796
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-11",
+    "price": 953409
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-12",
+    "price": 945278
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-13",
+    "price": 941901
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-14",
+    "price": 946274
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-15",
+    "price": 944836
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-16",
+    "price": 935000
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-17",
+    "price": 935307
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-18",
+    "price": 926204
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-19",
+    "price": 932139
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-20",
+    "price": 938813
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-21",
+    "price": 939763
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-22",
+    "price": 938562
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-23",
+    "price": 929913
+  },
+  {
+    "productId": "product_37",
+    "date": "2025-06-24",
+    "price": 920608
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-01",
+    "price": 672271
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-02",
+    "price": 681431
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-03",
+    "price": 685448
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-04",
+    "price": 685796
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-05",
+    "price": 687610
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-06",
+    "price": 680971
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-07",
+    "price": 686599
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-08",
+    "price": 686664
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-09",
+    "price": 689642
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-10",
+    "price": 687830
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-11",
+    "price": 690942
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-12",
+    "price": 688150
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-13",
+    "price": 695485
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-14",
+    "price": 699055
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-15",
+    "price": 701041
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-16",
+    "price": 706837
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-17",
+    "price": 698185
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-18",
+    "price": 706335
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-19",
+    "price": 710275
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-20",
+    "price": 706536
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-21",
+    "price": 716485
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-22",
+    "price": 724342
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-23",
+    "price": 722592
+  },
+  {
+    "productId": "product_38",
+    "date": "2025-06-24",
+    "price": 727785
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-01",
+    "price": 1428490
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-02",
+    "price": 1429950
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-03",
+    "price": 1438529
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-04",
+    "price": 1429850
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-05",
+    "price": 1436607
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-06",
+    "price": 1435831
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-07",
+    "price": 1436384
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-08",
+    "price": 1430363
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-09",
+    "price": 1429581
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-10",
+    "price": 1432614
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-11",
+    "price": 1431874
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-12",
+    "price": 1423228
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-13",
+    "price": 1428006
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-14",
+    "price": 1431931
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-15",
+    "price": 1423198
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-16",
+    "price": 1414216
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-17",
+    "price": 1422186
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-18",
+    "price": 1428336
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-19",
+    "price": 1435927
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-20",
+    "price": 1435285
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-21",
+    "price": 1438189
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-22",
+    "price": 1437669
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-23",
+    "price": 1434800
+  },
+  {
+    "productId": "product_39",
+    "date": "2025-06-24",
+    "price": 1436827
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-01",
+    "price": 1616441
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-02",
+    "price": 1625731
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-03",
+    "price": 1625498
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-04",
+    "price": 1621055
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-05",
+    "price": 1618296
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-06",
+    "price": 1624724
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-07",
+    "price": 1626686
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-08",
+    "price": 1629892
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-09",
+    "price": 1635513
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-10",
+    "price": 1630860
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-11",
+    "price": 1634531
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-12",
+    "price": 1636463
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-13",
+    "price": 1643796
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-14",
+    "price": 1643258
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-15",
+    "price": 1641992
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-16",
+    "price": 1647796
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-17",
+    "price": 1649028
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-18",
+    "price": 1641001
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-19",
+    "price": 1635462
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-20",
+    "price": 1637041
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-21",
+    "price": 1639825
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-22",
+    "price": 1635669
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-23",
+    "price": 1640187
+  },
+  {
+    "productId": "product_40",
+    "date": "2025-06-24",
+    "price": 1631262
+  }
 ]
