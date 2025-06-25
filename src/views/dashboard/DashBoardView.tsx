@@ -1,4 +1,6 @@
-import DashBoardList from '@/views/dashboard/DashboardList';
+'use client';
+
+import DashBoardList from '@/views/dashboard/DashBoardList';
 
 export default function DashBoardView() {
   return (
