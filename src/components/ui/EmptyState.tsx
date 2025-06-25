@@ -1,6 +1,6 @@
 import { EmptyStateProp } from '@/types/ui.types';
 import { BoxIcon, LucideInbox, Package } from 'lucide-react';
-import * as styles from '@/styles/EmptyState.styles';
+import * as styles from '@/styles/ui/EmptyState.styles';
 
 export const EmptyState = ({
   icon,

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ProductCardProps } from '@/types/product.type';
-import * as styles from './ProductCard.styles';
+import * as styles from '@/styles/ui/ProductCard.styles';
 import { ChevronRight, Heart, Star } from 'lucide-react';
 
 export const ProductCard = ({ sect, product, onClick }: ProductCardProps) => {
