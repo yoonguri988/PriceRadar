@@ -1,4 +1,4 @@
-import * as styles from '@/views/dashboard/DashboardList.styles';
+import * as styles from '@/views/dashboard/DashBoardList.styles';
 import mockProducts from '@/mock/mockProducts.json';
 import { ProductCard } from '@/components/ui/ProductCard';
 import { MiniPriceChart } from '@/features/chart/components/MiniPriceChart';
