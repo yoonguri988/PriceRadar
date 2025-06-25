@@ -35,3 +35,7 @@ export interface NavLinkProps {
   href: string;
   label: string;
 }
+
+export interface IconProps {
+  isActive?: boolean;
+}
