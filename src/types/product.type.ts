@@ -80,3 +80,11 @@ export type ProductSortStoreProps = {
   filter: FilterOption;
   setFilter: (filter: FilterOption) => void;
 };
+
+export interface ProductDetailProps {
+  id: String;
+}
+
+export interface NotificationProps {
+  productId: string;
+}

@@ -39,3 +39,13 @@ export interface NavLinkProps {
 export interface IconProps {
   isActive?: boolean;
 }
+
+export interface BadgeProps {
+  text: string;
+  color?: string; // 배경색(hex or tailwind)
+}
+
+export interface ToggleButtonProps {
+  initial?: boolean;
+  onToggle?: (active: boolean) => void;
+}
