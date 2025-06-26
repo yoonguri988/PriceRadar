@@ -7,6 +7,7 @@ import SearchResults from '@/features/search/components/SearchResults';
 import { Product } from '@/types/product.type';
 import mockData from '@/mock/mockProducts.json';
 import { ArrowLeft, ShoppingBagIcon } from 'lucide-react';
+import ScrapedProductList from '@/features/product/components/ScrapedProductList';
 
 /**
  * views/search/page.tsx
@@ -90,7 +91,10 @@ export default function SearchPageView() {
         </div>
         {/* </div> */}
       </div>
-      <SearchResults items={results} />
+      {/* <SearchResults items={results} /> */}
+      {/* 크롤링 */}
+      <ScrapedProductList keyword={keyword} source="enuri" />
+      {/* <ScrapedProductList keyword={keyword} source="danawa" /> */}
     </main>
   );
 }

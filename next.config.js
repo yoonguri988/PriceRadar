@@ -3,11 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   // 필요시 experimental.appDir 등 추가 설정
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
+    webpack: (config, { isServer }) => {
+    config.experiments = {
+      ...config.experiments,
+      topLevelAwait: true,
+    };
     return config;
   },
   images: {
